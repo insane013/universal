@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Universal</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto+Slab:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/lazyframe.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <h1 style="display: none;">Hidden h1 title</h1>
+    <div class="header-top">
+      <div class="container header-top-container">
+        <a href="#" class="logo-link">
+          <img src="img/logo.svg" alt="Logo: UNIVERSAL" class="logo-img">
+        </a>
+        <nav class="menu header__menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Статьи</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Новости</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Курсы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">HTML</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">CSS</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">JavaScript</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Web Design</a>
+            </li>
+          </ul>
+          <!-- /.menu__list -->
+        </nav>
+        <!-- /.menu header__menu -->
+        <form action="#" class="search header__search">
+          <div class="search__input-wrapper">
+            <input type="text" class="search__input" placeholder="Поиск">
+            <button class="search__button">
+              <svg class="search__button-ico">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- /.search__input-wrapper -->
+        </form>
+        <!-- /.search header__search -->
+      </div>
+    </div>
+    <!-- /.header__top -->
+    <div class="header-main">
+      <div class="container header-main-container">
+        <div class="header-main__block header-main__block--main">
+          <form class="header-main__tabs">
+            <span class="header-main__recomendation">РЕКОМЕНДУЕМ</span>
+            <input class="header-main__tab" type="radio" name="tab" id="tab-1" value="#content-1" data-interact="tab">
+            <label class="header-main__label" for="tab-1">
+              <h3 class="header-main__tab-title color-3BBDC4">CSS</h3>
+              <p class="header-main__tab-text">Как использовать CSS float после того, как вышел Flexbox</p>
+            </label>
+            <input class="header-main__tab" type="radio" name="tab" id="tab-2" value="#content-2" data-interact="tab"
+              checked>
+            <label class="header-main__label" for="tab-2">
+              <h3 class="header-main__tab-title color-6E99AE">Javascript</h3>
+              <p class="header-main__tab-text">На каком стандарте писать скрипты, если я фрилансер</p>
+            </label>
+            <input class="header-main__tab" type="radio" name="tab" id="tab-3" value="#content-3" data-interact="tab">
+            <label class="header-main__label" for="tab-3">
+              <h3 class="header-main__tab-title color-AC8EE3">html</h3>
+              <p class="header-main__tab-text">Правильно вставляем картинку на сайт для Retina дисплея</p>
+            </label>
+            <input class="header-main__tab" type="radio" name="tab" id="tab-4" value="#content-4" data-interact="tab">
+            <label class="header-main__label" for="tab-4">
+              <h3 class="header-main__tab-title color-FFA34D">web design</h3>
+              <p class="header-main__tab-text">ТОП-10 плагинов для Figma</p>
+            </label>
+            <input class="header-main__tab" type="radio" name="tab" id="tab-5" value="#content-5" data-interact="tab">
+            <label class="header-main__label" for="tab-5">
+              <h3 class="header-main__tab-title color-3DC47E">CSS</h3>
+              <p class="header-main__tab-text">Возможности CSS Grid Layout , которые уже можно применять</p>
+            </label>
+          </form>
+          <!-- /.content__tabs -->
+          <div class="header-content header-main__viewport" id="content-1">
+            <img class="header-content__bg" src="img/header-content-1.jpg" alt="Content-1">
+            <a href="#" class="profile header-content__profile">
+              <img src="img/avatar.jpg" alt="User avatar" class="profile__avatar">
+              <div class="profile__text">
+                <span class="profile__name">Василий Пупкин</span>
+                <span class="profile__job">Frontend</span>
+              </div>
+            </a>
+            <!-- /.profile header-content__profile -->
+            <div class="header-content__text-block">
+              <span class="header-content__text-tag">CSS</span>
+              <h2 class="header-content__title">Как использовать CSS float после того, как вышел Flexbox</h2>
+              <a href="#" class="button read-more header-content__button">
+                <span class="read-more__label">Читать далее</span>
+                <svg class="read-more__arrow">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- /.content-1 -->
+          <div class="header-content header-main__viewport" id="content-2">
+            <img class="header-content__bg" src="img/header-content-1.jpg" alt="Content-1">
+            <a href="#" class="profile header-content__profile">
+              <img src="img/avatar.jpg" alt="User avatar" class="profile__avatar">
+              <div class="profile__text">
+                <span class="profile__name">Давид Гуров</span>
+                <span class="profile__job">Разработчик</span>
+              </div>
+            </a>
+            <!-- /.profile header-content__profile -->
+            <div class="header-content__text-block">
+              <span class="header-content__text-tag">Javascript</span>
+              <h2 class="header-content__title">Расширение Chrome защищает от атак</h2>
+              <a href="#" class="button read-more header-content__button">
+                <span class="read-more__label">Читать далее</span>
+                <svg class="read-more__arrow">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- /.content-2 -->
+          <div class="header-content header-main__viewport" id="content-3">
+            <img class="header-content__bg" src="img/header-content-1.jpg" alt="Content-1">
+            <a href="#" class="profile header-content__profile">
+              <img src="img/avatar.jpg" alt="User avatar" class="profile__avatar">
+              <div class="profile__text">
+                <span class="profile__name">Иван Иваныч</span>
+                <span class="profile__job">Верстальщик</span>
+              </div>
+            </a>
+            <!-- /.profile header-content__profile -->
+            <div class="header-content__text-block">
+              <span class="header-content__text-tag">HTML</span>
+              <h2 class="header-content__title">Правильно вставляем картинку на сайт для Retina дисплея</h2>
+              <a href="#" class="button read-more header-content__button">
+                <span class="read-more__label">Читать далее</span>
+                <svg class="read-more__arrow">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- /.content-3 -->
+          <div class="header-content header-main__viewport" id="content-4">
+            <img class="header-content__bg" src="img/header-content-1.jpg" alt="Content-1">
+            <a href="#" class="profile header-content__profile">
+              <img src="img/avatar.jpg" alt="User avatar" class="profile__avatar">
+              <div class="profile__text">
+                <span class="profile__name">Designer228</span>
+                <span class="profile__job">Дизайнер</span>
+              </div>
+            </a>
+            <!-- /.profile header-content__profile -->
+            <div class="header-content__text-block">
+              <span class="header-content__text-tag">Web design</span>
+              <h2 class="header-content__title">Топ-10 плагинов для Figma. </h2>
+              <a href="#" class="button read-more header-content__button">
+                <span class="read-more__label">Читать далее</span>
+                <svg class="read-more__arrow">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- /.content-4 -->
+          <div class="header-content header-main__viewport" id="content-5">
+            <img class="header-content__bg" src="img/header-content-1.jpg" alt="Content-1">
+            <a href="#" class="profile header-content__profile">
+              <img src="img/avatar.jpg" alt="User avatar" class="profile__avatar">
+              <div class="profile__text">
+                <span class="profile__name">Василий Пупкин</span>
+                <span class="profile__job">Frontend</span>
+              </div>
+            </a>
+            <!-- /.profile header-content__profile -->
+            <div class="header-content__text-block">
+              <span class="header-content__text-tag">CSS</span>
+              <h2 class="header-content__title">Возможности CSS Grid Layout , которые уже можно применять</h2>
+              <a href="#" class="button read-more header-content__button">
+                <span class="read-more__label">Читать далее</span>
+                <svg class="read-more__arrow">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- /.content-5 -->
+        </div>
+        <!-- /.header-main__block header-main__block--main -->
+      </div>
+      <div class="header-bottom header-main__bottom">
+        <div class="container header-bottom-container">
+          <ul class="header-bottom__list">
+            <li class="header-bottom__item">
+              <p class="header-bottom__text">25 способов настроить&nbspслайдер</p>
+              <img src="img/header-bottom-item-1.jpg" alt="Картинка: 25 способов настроить слайдер"
+                class="header-bottom__img">
+            </li>
+            <!-- /.header-bottm__item -->
+            <li class="header-bottom__item">
+              <p class="header-bottom__text">Главные фишки фрилансера</p>
+              <img src="img/header-bottom-item-2.jpg" alt="Картинка: Главные фишки фрилансера"
+                class="header-bottom__img">
+            </li>
+            <!-- /.header-bottm__item -->
+            <li class="header-bottom__item">
+              <p class="header-bottom__text">Техника управлеия временем “Помодоро”</p>
+              <img src="img/header-bottom-item-3.jpg" alt="Картинка: Техника управлеия  временем “Помодоро”"
+                class="header-bottom__img">
+            </li>
+            <!-- /.header-bottm__item -->
+            <li class="header-bottom__item">
+              <p class="header-bottom__text">Что нужно знать о Git и&nbspGitHub </p>
+              <img src="img/header-bottom-item-4.jpg" alt="Картинка: Что нужно знать о Git и GitHub "
+                class="header-bottom__img">
+            </li>
+            <!-- /.header-bottm__item -->
+          </ul>
+          <!-- /.header-bottom__list -->
+        </div>
+        <!-- /.container header-bottom-container -->
+      </div>
+      <!-- /.header-bottom -->
+    </div>
+    <!-- /.header__main -->
+
+  </header>
+  <!-- /.header -->
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/lazyframe.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
