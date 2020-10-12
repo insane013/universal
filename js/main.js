@@ -18,4 +18,12 @@ $(document).ready(function () {
     }
   }
 
+  $('.menu-btn').on('click', function () {
+    $(".header__menu").toggleClass("header__menu--visible")
+  });
+  $('.tab-btn').on('click', function () {
+    $(".header-main__tabs").toggleClass("header-main__tabs--visible")
+    $(".tab-btn").toggleClass("tab-btn--tabs-visible")
+  });
+
 });

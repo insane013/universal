@@ -24,8 +24,22 @@
         <a href="#" class="logo-link">
           <img src="img/logo.svg" alt="Logo: UNIVERSAL" class="logo-img">
         </a>
-        <nav class="menu header__menu">
+        <nav class="menu header__menu header__menu--mobile-hidden">
           <ul class="menu__list">
+            <li class="menu__item">
+              <form action="#" class="search header__search header__search--mobile--visible">
+                <div class="search__input-wrapper">
+                  <input type="text" class="search__input" placeholder="Поиск">
+                  <button class="search__button">
+                    <svg class="search__button-ico">
+                      <use xlink:href="img/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                </div>
+                <!-- /.search__input-wrapper -->
+              </form>
+              <!-- /.search header__search -->
+            </li>
             <li class="menu__item">
               <a href="#" class="menu__link">Статьи</a>
             </li>
@@ -51,7 +65,7 @@
           <!-- /.menu__list -->
         </nav>
         <!-- /.menu header__menu -->
-        <form action="#" class="search header__search">
+        <form action="#" class="search header__search header__search--mobile--hidden">
           <div class="search__input-wrapper">
             <input type="text" class="search__input" placeholder="Поиск">
             <button class="search__button">
@@ -63,39 +77,45 @@
           <!-- /.search__input-wrapper -->
         </form>
         <!-- /.search header__search -->
+        <button class="menu-btn header__menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
     <!-- /.header__top -->
     <div class="header-main">
       <div class="container header-main-container">
         <div class="header-main__block header-main__block--main">
-          <form class="header-main__tabs">
+          <button class="tab-btn">&lt;</button>
+          <form class="header-main__tabs header-main__tabs--mobile-hidden">
             <span class="header-main__recomendation">РЕКОМЕНДУЕМ</span>
             <input class="header-main__tab" type="radio" name="tab" id="tab-1" value="#content-1" data-interact="tab">
             <label class="header-main__label" for="tab-1">
-              <h3 class="header-main__tab-title color-3BBDC4">CSS</h3>
-              <p class="header-main__tab-text">Как использовать CSS float после того, как вышел Flexbox</p>
+              <span class="header-main__tab-title color-3BBDC4">CSS</span>
+              <span class="header-main__tab-text">Как использовать CSS float после того, как вышел Flexbox</span>
             </label>
             <input class="header-main__tab" type="radio" name="tab" id="tab-2" value="#content-2" data-interact="tab"
               checked>
             <label class="header-main__label" for="tab-2">
-              <h3 class="header-main__tab-title color-6E99AE">Javascript</h3>
-              <p class="header-main__tab-text">На каком стандарте писать скрипты, если я фрилансер</p>
+              <span class="header-main__tab-title color-6E99AE">Javascript</span>
+              <span class="header-main__tab-text">На каком стандарте писать скрипты, если я фрилансер</span>
             </label>
             <input class="header-main__tab" type="radio" name="tab" id="tab-3" value="#content-3" data-interact="tab">
             <label class="header-main__label" for="tab-3">
-              <h3 class="header-main__tab-title color-AC8EE3">html</h3>
-              <p class="header-main__tab-text">Правильно вставляем картинку на сайт для Retina дисплея</p>
+              <span class="header-main__tab-title color-AC8EE3">html</span>
+              <span class="header-main__tab-text">Правильно вставляем картинку на сайт для Retina дисплея</span>
             </label>
             <input class="header-main__tab" type="radio" name="tab" id="tab-4" value="#content-4" data-interact="tab">
             <label class="header-main__label" for="tab-4">
-              <h3 class="header-main__tab-title color-FFA34D">web design</h3>
-              <p class="header-main__tab-text">ТОП-10 плагинов для Figma</p>
+              <span class="header-main__tab-title color-FFA34D">web design</span>
+              <span class="header-main__tab-text">ТОП-10 плагинов для Figma</span>
             </label>
             <input class="header-main__tab" type="radio" name="tab" id="tab-5" value="#content-5" data-interact="tab">
             <label class="header-main__label" for="tab-5">
-              <h3 class="header-main__tab-title color-3DC47E">CSS</h3>
-              <p class="header-main__tab-text">Возможности CSS Grid Layout , которые уже можно применять</p>
+              <span class="header-main__tab-title color-3DC47E">CSS</span>
+              <span class="header-main__tab-text">Возможности CSS Grid Layout , которые уже можно применять</span>
             </label>
           </form>
           <!-- /.content__tabs -->
@@ -210,31 +230,31 @@
           </div>
           <!-- /.content-5 -->
         </div>
-        <!-- /.header-main__block header-main__block--main -->
+        <!-- /.header-main__block header-main__block_main -->
       </div>
       <div class="header-bottom header-main__bottom">
         <div class="container header-bottom-container">
           <ul class="header-bottom__list">
             <li class="header-bottom__item">
-              <p class="header-bottom__text">25 способов настроить&nbspслайдер</p>
+              <a href="#" class="header-bottom__text">25 способов настроить&nbsp;слайдер</a>
               <img src="img/header-bottom-item-1.jpg" alt="Картинка: 25 способов настроить слайдер"
                 class="header-bottom__img">
             </li>
             <!-- /.header-bottm__item -->
             <li class="header-bottom__item">
-              <p class="header-bottom__text">Главные фишки фрилансера</p>
+              <a href="#" class="header-bottom__text">Главные фишки фрилансера</a>
               <img src="img/header-bottom-item-2.jpg" alt="Картинка: Главные фишки фрилансера"
                 class="header-bottom__img">
             </li>
             <!-- /.header-bottm__item -->
             <li class="header-bottom__item">
-              <p class="header-bottom__text">Техника управлеия временем “Помодоро”</p>
+              <a href="#" class="header-bottom__text">Техника управлеия временем “Помодоро”</a>
               <img src="img/header-bottom-item-3.jpg" alt="Картинка: Техника управлеия  временем “Помодоро”"
                 class="header-bottom__img">
             </li>
             <!-- /.header-bottm__item -->
             <li class="header-bottom__item">
-              <p class="header-bottom__text">Что нужно знать о Git и&nbspGitHub </p>
+              <a href="#" class="header-bottom__text">Что нужно знать о Git и&nbsp;GitHub </a>
               <img src="img/header-bottom-item-4.jpg" alt="Картинка: Что нужно знать о Git и GitHub "
                 class="header-bottom__img">
             </li>
