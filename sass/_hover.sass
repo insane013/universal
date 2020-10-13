@@ -16,8 +16,7 @@
         color: $dark
   .header-bottom__item
     &:hover, &:focus
-      .header-bottom__text
-        color: $interactive
+      background-color: $interactive
 
   .button
     &:hover, &:focus
@@ -27,3 +26,37 @@
     &:hover, &:focus
       .profile__name
         color: $interactive
+
+  a.article-card__title
+    &:hover, &:focus
+      color: $interactive
+  .article-card
+    &__author
+      &-name
+        &:hover, &:focus
+          color: $interactive
+    &__likes
+      &:hover, &:focus
+        color: $interactive
+        .article-card__likes-ico
+          fill: red
+    &__comments
+      &:hover, &:focus
+        color: $interactive
+        .article-card__comments-ico
+          fill: $interactive
+    &__download
+      &:hover, &:focus
+        .article-card__download-text
+          color: $dark
+        .article-card__download-ico
+          fill: $dark
+    &__type-tag
+      &:hover, &:focus
+        color: $interactive
+        background-color: $dark
+    &__link
+      &:hover, &:focus
+        background-color: $dark
+        .article-card__link-ico
+          fill: $interactive

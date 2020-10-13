@@ -26,8 +26,8 @@
         </a>
         <nav class="menu header__menu header__menu--mobile-hidden">
           <ul class="menu__list">
-            <li class="menu__item menu__item--mr-0">
-              <form action="#" class="search header__search header__search--mobile--visible">
+            <li class="menu__item menu__item--mobile--visible">
+              <form action="#" class="search header__search">
                 <div class="search__input-wrapper">
                   <input type="text" class="search__input" placeholder="Поиск">
                   <button class="search__button">
@@ -83,6 +83,49 @@
           <span></span>
         </button>
       </div>
+
+      <nav class="menu header__menu header__menu--mobile-visible">
+        <ul class="menu__list">
+          <li class="menu__item menu__item--mobile--visible">
+            <form action="#" class="search header__search">
+              <div class="search__input-wrapper">
+                <input type="text" class="search__input" placeholder="Поиск">
+                <button class="search__button">
+                  <svg class="search__button-ico">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </div>
+              <!-- /.search__input-wrapper -->
+            </form>
+            <!-- /.search header__search -->
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Статьи</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Новости</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Курсы</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">HTML</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">CSS</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">JavaScript</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Web Design</a>
+          </li>
+        </ul>
+        <!-- /.menu__list -->
+      </nav>
+      <!-- /.menu header__menu -->
+
     </div>
     <!-- /.header__top -->
     <div class="header-main">
@@ -131,7 +174,7 @@
             <!-- /.profile header-content__profile -->
             <div class="header-content__text-block">
               <span class="header-content__text-tag">CSS</span>
-              <h2 class="header-content__title">Как использовать CSS float после того, как вышел Flexbox</h2>
+              <a href="#" class="header-content__title">Как использовать CSS float после того, как вышел Flexbox</a>
               <a href="#" class="button read-more header-content__button">
                 <span class="read-more__label">Читать далее</span>
                 <svg class="read-more__arrow">
@@ -153,7 +196,7 @@
             <!-- /.profile header-content__profile -->
             <div class="header-content__text-block">
               <span class="header-content__text-tag">Javascript</span>
-              <h2 class="header-content__title">Расширение Chrome защищает от атак</h2>
+              <a href="#" class="header-content__title">Расширение Chrome защищает от атак</a>
               <a href="#" class="button read-more header-content__button">
                 <span class="read-more__label">Читать далее</span>
                 <svg class="read-more__arrow">
@@ -175,7 +218,7 @@
             <!-- /.profile header-content__profile -->
             <div class="header-content__text-block">
               <span class="header-content__text-tag">HTML</span>
-              <h2 class="header-content__title">Правильно вставляем картинку на сайт для Retina дисплея</h2>
+              <a href="#" class="header-content__title">Правильно вставляем картинку на сайт для Retina дисплея</a>
               <a href="#" class="button read-more header-content__button">
                 <span class="read-more__label">Читать далее</span>
                 <svg class="read-more__arrow">
@@ -197,7 +240,7 @@
             <!-- /.profile header-content__profile -->
             <div class="header-content__text-block">
               <span class="header-content__text-tag">Web design</span>
-              <h2 class="header-content__title">Топ-10 плагинов для Figma. </h2>
+              <a href="#" class="header-content__title">Топ-10 плагинов для Figma. </a>
               <a href="#" class="button read-more header-content__button">
                 <span class="read-more__label">Читать далее</span>
                 <svg class="read-more__arrow">
@@ -219,7 +262,7 @@
             <!-- /.profile header-content__profile -->
             <div class="header-content__text-block">
               <span class="header-content__text-tag">CSS</span>
-              <h2 class="header-content__title">Возможности CSS Grid Layout , которые уже можно применять</h2>
+              <a href="#" class="header-content__title">Возможности CSS Grid Layout , которые уже можно применять</a>
               <a href="#" class="button read-more header-content__button">
                 <span class="read-more__label">Читать далее</span>
                 <svg class="read-more__arrow">
@@ -236,7 +279,7 @@
         <div class="container header-bottom-container">
           <ul class="header-bottom__list">
             <li class="header-bottom__item">
-              <a href="#" class="header-bottom__text">25 способов настроить&nbsp;слайдер</a>
+              <a href="#" class="header-bottom__text">25 способов настроить слайдер</a>
               <img src="img/header-bottom-item-1.jpg" alt="Картинка: 25 способов настроить слайдер"
                 class="header-bottom__img">
             </li>
@@ -276,9 +319,11 @@
       <div class="article-card card-2-2 article-card--type-1">
         <div class="article-card__info article-card__info--type-1">
           <span class="article-card__tag color-6E99AE">Статьи</span>
-          <h2 class="article-card__title article-card__title--type-1">Вам предложили работу мечты, но вы не можете...
-          </h2>
-          <p class="article-card__text">Как поступить, если хочется пойти на работу мечты, но она находится в другом
+          <a href="#" class="article-card__title article-card__title--type-1">Вам предложили работу мечты, но вы не
+            можете...
+          </a>
+          <p class="article-card__text article-card__text--type-1">Как поступить, если хочется пойти на работу мечты, но
+            она находится в другом
             городе. У вас семья и переезжать вы не готовы.</p>
         </div>
         <!-- /.article-card__info -->
@@ -306,7 +351,8 @@
         <span class="article-card__popular-tag">Популярное</span>
         <div class="article-card__info article-card__info--type-2">
           <div class="article-card__tag">Web design</div>
-          <h2 class="article-card__title article-card__title--type-2">Где взять реальные проекты для портфолио</h2>
+          <a href="#" class="article-card__title article-card__title--type-2">Где взять реальные проекты для
+            портфолио</a>
         </div>
         <!-- /.article-card__info -->
         <div class="article-card__bottom article-card__bottom--type-2">
@@ -376,12 +422,12 @@
       <div class="article-card card-1-2 article-card--type-3">
         <img src="img/article-card-3.jpg" alt="Картинка: 20+ инструментов для js-разработчика"
           class="article-card__bg article-card__bg--type-3">
-        <h2 class="article-card__title article-card__title--type-3">20+ инструментов<br>для js-разработчика</h2>
+        <a href="#" class="article-card__title article-card__title--type-3">20+ инструментов<br>для js-разработчика</a>
       </div>
       <!-- /.article-card card-1-2 article-card--type--3 -->
 
       <div class="article-card article-card--type-4">
-        <h2 class="article-card__title article-card__title--type-4">Удачные референсы</h2>
+        <a href="#" class="article-card__title article-card__title--type-4">Удачные референсы</a>
         <p class="article-card__text article-card__text--type-4">Как выбрать подходящие исходники, если вы ищите идею
           для интерфейса</p>
         <span class="article-card__date article-card__date--type-4">15 октября</span>
@@ -389,7 +435,7 @@
       <!-- /.article-card -->
 
       <div class="article-card article-card--type-4">
-        <h2 class="article-card__title article-card__title--type-4">Заказчики — мудаки?</h2>
+        <a href="#" class="article-card__title article-card__title--type-4">Заказчики — мудаки?</a>
         <p class="article-card__text article-card__text--type-4">Как защититься от бесконечных правок на этапе сдачи
           проекта</p>
         <span class="article-card__date article-card__date--type-4">20 октября</span>
@@ -397,7 +443,7 @@
       <!-- /.article-card -->
 
       <div class="article-card article-card--type-4">
-        <h2 class="article-card__title article-card__title--type-4">Работа без стресса — это...</h2>
+        <a href="#" class="article-card__title article-card__title--type-4">Работа без стресса — это...</a>
         <p class="article-card__text article-card__text--type-4">Обустройте свое рабочее место так, чтобы не испытывать
           раздражение от скрипучего... </p>
         <span class="article-card__date article-card__date--type-4">26 октября</span>
@@ -405,7 +451,7 @@
       <!-- /.article-card -->
 
       <div class="article-card article-card--type-4">
-        <h2 class="article-card__title article-card__title--type-4">Бесплатные методы...</h2>
+        <a href="#" class="article-card__title article-card__title--type-4">Бесплатные методы...</a>
         <p class="article-card__text article-card__text--type-4">Как не платить за софт, если у вас есть студенческий
           билет высшего учебного заведения</p>
         <span class="article-card__date article-card__date--type-4">13 октября</span>
@@ -421,6 +467,7 @@
                 <use xlink:href="img/sprite.svg#fb"></use>
               </svg>
             </a>
+            <a href="#" class="article-card__link-text">Facebook</a>
           </li>
           <li class="article-card__item">
             <a href="#" class="article-card__link article-card__link--tw">
@@ -428,6 +475,7 @@
                 <use xlink:href="img/sprite.svg#twitter"></use>
               </svg>
             </a>
+            <a href="#" class="article-card__link-text">Twitter</a>
           </li>
           <li class="article-card__item">
             <a href="#" class="article-card__link article-card__link--yt">
@@ -435,6 +483,7 @@
                 <use xlink:href="img/sprite.svg#yt"></use>
               </svg>
             </a>
+            <a href="#" class="article-card__link-text">Youtube</a>
           </li>
         </ul>
       </div>
