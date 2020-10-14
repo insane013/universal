@@ -2,6 +2,7 @@
   &-grid
     background-color: $light
     padding-top: 30px
+    padding-bottom: 60px
     &__container
       display: grid
       grid-template-columns: repeat(4, 1fr)
@@ -61,6 +62,9 @@
       order: 5
 
     &--type-4
+      display: flex
+      flex-direction: column
+      justify-content: space-between
       order: 6
 
     &__info
@@ -86,7 +90,7 @@
       font-style: normal
       font-weight: bold
       font-size: 16px
-      line-height: 25px
+      line-height: 125%
       display: block
       text-decoration: none
       overflow-y: hidden
@@ -96,21 +100,21 @@
       &--type-1
         margin: 20px 0
         font-size: 25px
-        line-height: 30px
+        line-height: 125%
         max-width: 50%
       &--type-2
         margin: 23px 0 0 0
         text-transform: uppercase
         font-weight: bold
         font-size: 16px
-        line-height: 25px
+        line-height: 125%
         color: #ffffff
       &--tags
         letter-spacing: 0.5px
         text-transform: uppercase
         color: $dark
         font-size: 14px
-        line-height: 20px
+        line-height: 125%
         font-family: Lato, sans-serif
         margin: 0
         margin-bottom: 20px
@@ -124,7 +128,7 @@
         -webkit-line-clamp: 1
       &--type-5
         font-size: 20px
-        line-height: 25px
+        line-height: 125%
         text-align: center
         margin-bottom: 25px
 
@@ -132,7 +136,7 @@
       color: #FFFFFF
       border-radius: 3px
       font-size: 12px
-      line-height: 15px
+      line-height: 125%
       background: #3DC47E
       padding: 5px 12px
       z-index: 1
@@ -141,12 +145,13 @@
       text-transform: uppercase
       // font-weight: 900
       font-size: 12px
-      line-height: 15px
+      line-height: 125%
       color: #E7D9FF
     &__text
       font-weight: normal
+      text-decoration: none
       font-size: 14px
-      line-height: 20px
+      line-height: 125%
       color: $text-color
       margin: 0
       max-width: 228px
@@ -160,9 +165,10 @@
     &__bg
       position: absolute
       object-fit: cover
-      right: 0
-      top: 15px
-      max-width: 50%
+      &--type-1
+        right: 0
+        top: 15px
+        max-width: 50%
       &--type-2
         left: 0
         top: 0
@@ -231,7 +237,7 @@
       &-name
         // font-weight: 900
         font-size: 14px
-        line-height: 20px
+        line-height: 125%
         color: $dark
         text-decoration: none
         &--type-2
@@ -241,24 +247,26 @@
           flex-basis: 100%
     &__quote
       margin: 0
+      text-decoration: none
       white-space: nowrap
       margin-right: 15px
       text-overflow: ellipsis
       overflow: hidden
       max-width: 285px
       font-size: 14px
-      line-height: 20px
+      line-height: 125%
       color: $text-color
     &__date
       opacity: 0.4
       font-size: 12px
-      line-height: 15px
+      line-height: 125%
       color: #ffffff
       margin-right: 8px
       &--type-4
         color: $secondary
         margin-right: 0
         opacity: 1
+        flex-basis: auto
     &__download
       text-decoration: none
       display: flex
@@ -273,7 +281,7 @@
         margin-right: 11px
       &-text
         font-size: 14px
-        line-height: 20px
+        line-height: 125%
         color: #FFFFFF
         &::before
           content: ''
@@ -290,13 +298,13 @@
         font-style: normal
         font-weight: bold
         font-size: 16px
-        line-height: 25px
+        line-height: 125%
         margin: 0
         margin-bottom: 10px
         color: #ffffff
       &-info
         font-size: 14px
-        line-height: 20px
+        line-height: 125%
         color: #C1F4F5
         display: block
 
@@ -305,7 +313,7 @@
       align-items: center
       text-decoration: none
       font-size: 12px
-      line-height: 15px
+      line-height: 125%
       color: $secondary
       z-index: 1
       &-ico
@@ -318,7 +326,7 @@
       align-items: center
       text-decoration: none
       font-size: 12px
-      line-height: 15px
+      line-height: 125%
       color: $secondary
       z-index: 1
       &-ico
@@ -382,6 +390,47 @@
       &--yt
         background: #FF0000
         border-radius: 50%
+
+.article-bar
+  padding-top: 50px
+  padding-bottom: 55px
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+  &__container
+    max-width: 946px
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+  &__title
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 125%
+    flex-basis: 100%
+
+    color: #ffffff
+    text-align: center
+    margin: 0
+    margin-bottom: 25px
+    z-index: 1
+  &__button
+    z-index: 1
+  &__bg
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+
 .card
   &-2-2
     grid-column: span 2

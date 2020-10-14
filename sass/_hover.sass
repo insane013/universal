@@ -16,7 +16,7 @@
         color: $dark
   .header-bottom__item
     &:hover, &:focus
-      background-color: $interactive
+      background-color: darken($dark, 10%)
 
   .button
     &:hover, &:focus
@@ -30,6 +30,9 @@
   a.article-card__title
     &:hover, &:focus
       color: $interactive
+  .article-card__text
+    &:hover, &:focus
+      color: darken($text-color, 50%)
   .article-card
     &__author
       &-name

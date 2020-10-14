@@ -4,7 +4,7 @@
   .header
     &-main
       &__viewport
-        width: 740px
+        width: 700px
     &-bottom
       &__item
         align-items: center
@@ -67,6 +67,8 @@
     &__date
       margin-bottom: 2px
       flex-basis: 100%
+      &--type-4
+        flex-basis: auto
     &__tag-container
       padding-top: 10px
     &__type-tag
@@ -137,7 +139,7 @@
           &::after
             display: none
       &__text
-        font-size: 15px
+        font-size: 14px
         font-weight: 900
     &-main
       &__block
@@ -149,11 +151,16 @@
         position: absolute
         height: 100%
         width: 400px
-        transition-property: right
+        transition-property: all
         transition-duration: 0.5s
+        visibility: hidden
         &--visible
           display: flex
+          visibility: visible
           right: 0
+      &__viewport
+        max-width: 100%
+        width: 100%
 
   .tab-btn
     display: block
@@ -190,6 +197,7 @@
     &--type-5
       order: 3
     &--type-4
+      grid-column: span 2
       order: 5
     &--type-2
       grid-column: span 2
@@ -213,6 +221,9 @@
         max-width: 70%
       &--type-3
         font-size: 20px
+      &--type-4
+        margin-bottom: 15px
+        font-size: 17px
       &--type-5
         margin-bottom: 10px
     &__social
@@ -237,6 +248,12 @@
         font-size: 12px
         color: $dark
 
+  .article-bar
+    &__container
+      max-width: 700px
+    &__title
+      font-size: 30px
+
 @media (max-width: 768px)
   .container
     max-width: 700px
@@ -257,6 +274,27 @@
     &__search
       &--mobile--hidden
         display: none
+    &-bottom
+      &__list
+        flex-direction: column
+      &__item
+        flex-basis: 100%
+        width: 100%
+        max-width: 100%
+        margin: 0
+        padding: 30px 25px
+        &:nth-child(even)
+          padding: 30px 25px
+        &:not(:first-child)
+          &::before
+            content: ''
+            position: absolute
+            background: #4B5157
+            width: 90%
+            height: 1px
+            top: 0
+            left: auto
+            right: auto
   .menu
     &__item--mobile--visible
       display: block
@@ -284,7 +322,7 @@
       order: 1
     &--tags
       grid-column: span 4
-      grid-row: span 1
+      grid-row: span 2
       order: 2
     &--file
       order: 6
@@ -335,6 +373,12 @@
         padding-left: 14px
       &-text
         display: none
+  .article-bar
+    &__container
+      max-width: 600px
+      width: 85%
+    &__title
+      font-size: 30px
 
 @media (max-width: 576px)
   .header
@@ -347,27 +391,8 @@
           margin-top: -250px
       &__tabs
         overflow-y: scroll
-    &-bottom
-      &__list
-        flex-direction: column
-      &__item
-        flex-basis: 100%
-        width: 100%
-        max-width: 100%
-        margin: 0
-        padding: 30px 25px
-        &:nth-child(even)
-          padding: 30px 25px
-        &:not(:first-child)
-          &::before
-            content: ''
-            position: absolute
-            background: #4B5157
-            width: 90%
-            height: 1px
-            top: 0
-            left: auto
-            right: auto
+        width: 90%
+
     &-content
       padding: 30px 20px
       min-height: 400px
@@ -382,6 +407,10 @@
           width: 100%
           top: -140px
 
+  .tab-btn
+    &--tabs-visible
+      right: 90%
+
   .header-bottom__item:not(:last-child)::after
     display: none
 
@@ -392,15 +421,23 @@
       grid-column: span 4
     &--file
       grid-column: span 4
+    &--type-4
+      grid-column: span 4
     &--type-5
       grid-column: span 4
     &__file
       &-name
         font-size: 14px
         margin-bottom: 15px
+    &__bg
+      &--type-1
+        max-width: 40%
+        top: 10%
     &__quote
       display: none
     &__title
+      &--type-1
+        max-width: 60%
       &--type-5
         font-size: 15px
     &__info
@@ -408,3 +445,20 @@
         padding-left: 10px
     &__bottom
       padding-left: 10px
+  .article-bar
+    &__container
+
+    &__title
+      font-size: 20px
+
+@media ( max-width: 380px )
+  .article-card
+    &__title
+      &--type-1
+        max-width: 100%
+    &__text
+      &--type-1
+        max-width: 100%
+    &__bg
+      &--type-1
+        display: none
