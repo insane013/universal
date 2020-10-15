@@ -25,5 +25,22 @@ $(document).ready(function () {
     $(".header-main__tabs").toggleClass("header-main__tabs--visible")
     $(".tab-btn").toggleClass("tab-btn--tabs-visible")
   });
+  $('.bookmark').on('click', function (event) {
+    event.preventDefault()
+    $(this).toggleClass('bookmark--checked')
+  });
+
+  var sliderSect = new Swiper('.slider-section__slider', {
+
+    loop: true,
+    keyboard: true,
+    // autoplay: true,
+    delay: 10000,
+    speed: 1000,
+    pagination: {
+      el: '.slider-section__slider-pagination',
+    },
+
+  });
 
 });

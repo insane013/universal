@@ -27,27 +27,25 @@
       .profile__name
         color: $interactive
 
-  a.article-card__title
+  .bookmark
     &:hover, &:focus
-      color: $interactive
-  .article-card__text
+      .bookmark__ico
+        // fill: $interactive
+
+  .article-card__article-link
     &:hover, &:focus
-      color: darken($text-color, 50%)
+      .article-card__title, .article-card__text,
+        color: $interactive
+      .article-list__item-title, .article-list__item-text
+        color: $interactive
   .article-card
     &__author
       &-name
         &:hover, &:focus
           color: $interactive
-    &__likes
+    &__quote
       &:hover, &:focus
         color: $interactive
-        .article-card__likes-ico
-          fill: red
-    &__comments
-      &:hover, &:focus
-        color: $interactive
-        .article-card__comments-ico
-          fill: $interactive
     &__download
       &:hover, &:focus
         .article-card__download-text
@@ -63,3 +61,21 @@
         background-color: $dark
         .article-card__link-ico
           fill: $interactive
+  .card-bottom
+    &__likes
+      &:hover, &:focus
+        color: $interactive
+        .card-bottom__likes-ico
+          fill: red
+    &__comments
+      &:hover, &:focus
+        color: $interactive
+        .card-bottom__comments-ico
+          fill: $interactive
+  .article-list__last
+    &-item-wrapper
+      &:hover, &:focus
+        background-color: darken(#ffffff, 20%)
+    &-read
+      &:hover, &:focus
+        background-color: darken(#ffffff, 20%)

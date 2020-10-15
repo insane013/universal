@@ -173,7 +173,7 @@
             </a>
             <!-- /.profile header-content__profile -->
             <div class="header-content__text-block">
-              <span class="header-content__text-tag">CSS</span>
+              <span class="tag header-content__tag">CSS</span>
               <a href="#" class="header-content__title">Как использовать CSS float после того, как вышел Flexbox</a>
               <a href="#" class="button read-more header-content__button">
                 <span class="read-more__label">Читать далее</span>
@@ -195,7 +195,7 @@
             </a>
             <!-- /.profile header-content__profile -->
             <div class="header-content__text-block">
-              <span class="header-content__text-tag">Javascript</span>
+              <span class="tag header-content__tag">Javascript</span>
               <a href="#" class="header-content__title">Расширение Chrome защищает от атак</a>
               <a href="#" class="button read-more header-content__button">
                 <span class="read-more__label">Читать далее</span>
@@ -217,7 +217,7 @@
             </a>
             <!-- /.profile header-content__profile -->
             <div class="header-content__text-block">
-              <span class="header-content__text-tag">HTML</span>
+              <span class="tag header-content__tag">HTML</span>
               <a href="#" class="header-content__title">Правильно вставляем картинку на сайт для Retina дисплея</a>
               <a href="#" class="button read-more header-content__button">
                 <span class="read-more__label">Читать далее</span>
@@ -239,7 +239,7 @@
             </a>
             <!-- /.profile header-content__profile -->
             <div class="header-content__text-block">
-              <span class="header-content__text-tag">Web design</span>
+              <span class="tag header-content__tag">Web design</span>
               <a href="#" class="header-content__title">Топ-10 плагинов для Figma. </a>
               <a href="#" class="button read-more header-content__button">
                 <span class="read-more__label">Читать далее</span>
@@ -261,7 +261,7 @@
             </a>
             <!-- /.profile header-content__profile -->
             <div class="header-content__text-block">
-              <span class="header-content__text-tag">CSS</span>
+              <span class="tag header-content__text-tag">CSS</span>
               <a href="#" class="header-content__title">Возможности CSS Grid Layout , которые уже можно применять</a>
               <a href="#" class="button read-more header-content__button">
                 <span class="read-more__label">Читать далее</span>
@@ -318,18 +318,20 @@
     <div class="container article-grid__container">
       <div class="article-card card-2-2 article-card--type-1">
         <div class="article-card__info article-card__info--type-1">
-          <span class="article-card__tag color-6E99AE">Статьи</span>
-          <a href="#" class="article-card__title article-card__title--type-1">Вам предложили работу мечты, но вы не
-            можете...
+          <span class="tag article-card__tag color-6E99AE">Статьи</span>
+          <a href="#" class="article-card__article-link">
+            <h2 class="article-card__title article-card__title--type-1">Вам предложили работу мечты, но вы не
+              можете...
+            </h2>
+            <p class="article-card__text article-card__text--type-1">Как поступить, если хочется пойти на работу
+              мечты, но
+              она находится в другом
+              городе. У вас семья и переезжать вы не готовы.</p>
           </a>
-          <a href="#" class="article-card__text article-card__text--type-1">Как поступить, если хочется пойти на работу
-            мечты, но
-            она находится в другом
-            городе. У вас семья и переезжать вы не готовы.</a>
         </div>
         <!-- /.article-card__info -->
         <img src="img/article-card-1.png" alt="car" class="article-card__bg article-card__bg--type-1">
-        <div class="article-card__bottom">
+        <div class="card-bottom article-card__bottom">
           <a href="#" class="article-card__author">
             <img src="img/article-avatar.jpg" alt="Аватар: Инна Квашова" class="article-card__author-avatar">
             <span class="article-card__author-name">Инна Квашова:</span>
@@ -337,11 +339,11 @@
           <a href="#" class="article-card__quote">Каждый разработчик мечтает переехать в большой город и грести там
             боьшие бабки
           </a>
-          <a href="#" class="article-card__comments">
-            <svg class="article-card__comments-ico">
+          <a href="#" class="card-bottom__comments">
+            <svg class="card-bottom__comments-ico">
               <use xlink:href="img/sprite.svg#comment"></use>
             </svg>
-            <span class="article-card__comments-count">342</span>
+            <span class="card-bottom__comments-count">342</span>
           </a>
         </div>
         <!-- /.article-card__bottom -->
@@ -350,32 +352,37 @@
 
       <div class="article-card card-1-2 article-card--type-2">
         <img src="img/article-card-2.png" alt="" class="article-card__bg article-card__bg--type-2">
-        <span class="article-card__popular-tag">Популярное</span>
+        <span class="hot">Популярное</span>
         <div class="article-card__info article-card__info--type-2">
-          <div class="article-card__tag">Web design</div>
-          <a href="#" class="article-card__title article-card__title--type-2">Где взять реальные проекты для
-            портфолио</a>
+          <div class="tag article-card__tag">Web design</div>
+          <a href="#" class="article-card__article-link">
+            <h2 class="article-card__title article-card__title--type-2">
+              Где взять
+              реальные проекты для
+              портфолио
+            </h2>
+          </a>
         </div>
         <!-- /.article-card__info -->
-        <div class="article-card__bottom article-card__bottom--type-2">
+        <div class="card-bottom article-card__bottom article-card__bottom--type-2">
           <a href="#" class="article-card__author-link">
             <img src="img/article-avatar.jpg" alt="Аватар: Инна Квашова"
               class="article-card__author-avatar article-card__author-avatar--type-2">
           </a>
           <div class="article-card__bottom-info">
             <a href="#" class="article-card__author-name article-card__author-name--type-2">Сара Женникова</a>
-            <div class="article-card__date">25 сентября</div>
-            <a href="#" class="article-card__comments">
-              <svg class="article-card__comments-ico">
+            <div class="card-bottom__date article-card__date">25 сентября</div>
+            <a href="#" class="card-bottom__comments">
+              <svg class="card-bottom__comments-ico">
                 <use xlink:href="img/sprite.svg#comment"></use>
               </svg>
-              <span class="article-card__comments-count">16</span>
+              <span class="card-bottom__comments-count">16</span>
             </a>
-            <a href="#" class="article-card__likes">
-              <svg class="article-card__likes-ico">
+            <a href="#" class="card-bottom__likes">
+              <svg class="card-bottom__likes-ico">
                 <use xlink:href="img/sprite.svg#like"></use>
               </svg>
-              <span class="article-card__likes-count">832</span>
+              <span class="card-bottom__likes-count">832</span>
             </a>
           </div>
         </div>
@@ -398,7 +405,7 @@
           <span class="article-card__download-text">Скачать</span>
         </a>
       </div>
-      <!-- /.article-card article-card--file -->
+      <!-- /.article-card article-card-file -->
 
       <div class="article-card card-1-2 article-card--tags">
         <h2 class="article-card__title article-card__title--tags">Тэги</h2>
@@ -424,42 +431,54 @@
       <div class="article-card card-1-2 article-card--type-3">
         <img src="img/article-card-3.jpg" alt="Картинка: 20+ инструментов для js-разработчика"
           class="article-card__bg article-card__bg--type-3">
-        <a href="#" class="article-card__title article-card__title--type-3">20+ инструментов<br>для js-разработчика</a>
+        <a href="#" class="article-card__article-link">
+          <h2 class="article-card__title article-card__title--type-3">20+ инструментов<br>для js-разработчика</h2>
+        </a>
       </div>
-      <!-- /.article-card card-1-2 article-card--type--3 -->
+      <!-- /.article-card card-1-2 article-card-type-3 -->
 
       <div class="article-card article-card--type-4">
-        <a href="#" class="article-card__title article-card__title--type-4">Удачные референсы</a>
-        <a href="#" class="article-card__text article-card__text--type-4">Как выбрать подходящие исходники, если вы
-          ищите идею
-          для интерфейса</a>
+        <a href="#" class="article-card__article-link">
+          <h2 class="article-card__title article-card__title--type-4">Удачные референсы
+          </h2>
+          <p class="article-card__text article-card__text--type-4">Как выбрать подходящие исходники, если вы
+            ищите идею
+            для интерфейса</p>
+        </a>
         <span class="article-card__date article-card__date--type-4">15 октября</span>
       </div>
       <!-- /.article-card -->
 
       <div class="article-card article-card--type-4">
-        <a href="#" class="article-card__title article-card__title--type-4">Заказчики — мудаки?</a>
-        <a href="#" class="article-card__text article-card__text--type-4">Как защититься от бесконечных правок на этапе
-          сдачи
-          проекта</a>
+        <a href="#" class="article-card__article-link">
+          <h2 class="article-card__title article-card__title--type-4">Заказчики — мудаки?</h2>
+          <p class="article-card__text article-card__text--type-4">Как защититься от бесконечных правок на
+            этапе
+            сдачи
+            проекта</p>
+        </a>
         <span class="article-card__date article-card__date--type-4">20 октября</span>
       </div>
       <!-- /.article-card -->
 
       <div class="article-card article-card--type-4">
-        <a href="#" class="article-card__title article-card__title--type-4">Работа без стресса — это...</a>
-        <a href="#" class="article-card__text article-card__text--type-4">Обустройте свое рабочее место так, чтобы не
-          испытывать
-          раздражение от скрипучего... </a>
+        <a href="#" class="article-card__article-link">
+          <h2 class="article-card__title article-card__title--type-4">Работа без стресса — это...</h2>
+          <p class="article-card__text article-card__text--type-4">Обустройте свое рабочее место так, чтобы не
+            испытывать
+            раздражение от скрипучего... </p>
+        </a>
         <span class="article-card__date article-card__date--type-4">26 октября</span>
       </div>
       <!-- /.article-card -->
 
       <div class="article-card article-card--type-4">
-        <a href="#" class="article-card__title article-card__title--type-4">Бесплатные методы...</a>
-        <a href="#" class="article-card__text article-card__text--type-4">Как не платить за софт, если у вас есть
-          студенческий
-          билет высшего учебного заведения</a>
+        <a href="#" class="article-card__article-link">
+          <h2 class="article-card__title article-card__title--type-4">Бесплатные методы...</h2>
+          <p class="article-card__text article-card__text--type-4">Как не платить за софт, если у вас есть
+            студенческий
+            билет высшего учебного заведения</p>
+        </a>
         <span class="article-card__date article-card__date--type-4">13 октября</span>
       </div>
       <!-- /.article-card -->
@@ -514,6 +533,488 @@
     <!-- /.container article-bar__container -->
   </section>
   <!-- /.article-bar -->
+
+  <section class="article-list">
+    <div class="container article-list__container">
+      <div class="article-list__recommend">
+        <div class="article-card article-list__item">
+          <img class="article-list__item-img" src="img/article-list-item-1.jpg"
+            alt="Картинка: Новый налоговый режим для фрилансеров — налог на проф. доход">
+          <div class="article-list__text-wrapper">
+            <span class="tag color-4592FF article-list__tag">Новости</span>
+            <a href="#" class="bookmark">
+              <svg class="bookmark__ico">
+                <use xlink:href="img/sprite.svg#bookmark"></use>
+              </svg>
+            </a>
+            <a href="#" class="article-card__article-link">
+              <h2 class="article-list__item-title">Новый налоговый режим для фрилансеров — налог на проф.
+                доход</h2>
+              <p class="article-list__item-text">Руководитель налоговой заявил, что этот режим “поможет выйти из
+                тени” тем, кто работает неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.
+              </p>
+            </a>
+            <div class="card-bottom article-list__bottom">
+              <div class="card-bottom__date">6 августа</div>
+              <a href="#" class="card-bottom__comments">
+                <svg class="card-bottom__comments-ico">
+                  <use xlink:href="img/sprite.svg#comment"></use>
+                </svg>
+                <span class="card-bottom___comments-count">342</span>
+              </a>
+              <a href="#" class="card-bottom__likes">
+                <svg class="card-bottom__likes-ico">
+                  <use xlink:href="img/sprite.svg#like"></use>
+                </svg>
+                <span class="card-bottom__likes-count">830</span>
+              </a>
+            </div>
+            <!-- /.article-card__bottom -->
+          </div>
+          <!-- /.article-list__text-wrapper -->
+        </div>
+        <!-- /.article-list__item -->
+        <div class="article-card article-list__item">
+          <img class="article-list__item-img" src="img/article-list-item-2.jpg"
+            alt="Картинка: Платные курсы — это не быстрый способ выйти на нужный уровень">
+          <div class="article-list__text-wrapper">
+            <span class="tag color-3BBDC4 article-list__tag">Мнения</span>
+            <a href="#" class="bookmark">
+              <svg class="bookmark__ico">
+                <use xlink:href="img/sprite.svg#bookmark"></use>
+              </svg>
+            </a>
+            <a href="#" class="article-card__article-link">
+              <h2 class="article-list__item-title">Платные курсы — это не быстрый способ выйти на нужный
+                уровень</h2>
+              <p class="article-list__item-text">Среди новичков распространено мнение, что если пройти какой-то
+                крутой онлайн-курс, то это решит все проблемы. Но они не берут в расчет, что лучшее обучение — это
+                практика. </p>
+            </a>
+            <div class="card-bottom article-list__bottom">
+              <div class="card-bottom__date">7 октября</div>
+              <a href="#" class="card-bottom__comments">
+                <svg class="card-bottom__comments-ico">
+                  <use xlink:href="img/sprite.svg#comment"></use>
+                </svg>
+                <span class="card-bottom___comments-count">27</span>
+              </a>
+              <a href="#" class="card-bottom__likes">
+                <svg class="card-bottom__likes-ico">
+                  <use xlink:href="img/sprite.svg#like"></use>
+                </svg>
+                <span class="card-bottom__likes-count">129</span>
+              </a>
+            </div>
+            <!-- /.article-card__bottom -->
+          </div>
+          <!-- /.article-list__text-wrapper -->
+        </div>
+        <!-- /.article-list__item -->
+        <div class="article-card article-list__item">
+          <img class="article-list__item-img" src="img/article-list-item-3.jpg"
+            alt="Картинка: Из-за ограничений стали недоступны серверы Telegram. К чему это может... ">
+          <div class="article-list__text-wrapper">
+            <span class="tag color-FF4F52 article-list__tag">Горячее</span>
+            <a href="#" class="bookmark">
+              <svg class="bookmark__ico">
+                <use xlink:href="img/sprite.svg#bookmark"></use>
+              </svg>
+            </a>
+            <a href="#" class="article-card__article-link">
+              <h2 class="article-list__item-title">Из-за ограничений стали недоступны серверы Telegram. К чему это
+                может... </h2>
+              <p class="article-list__item-text">Сегодня мы узнали, что серверы Telegram не доступны на территории
+                России. Разобрались, чем это грозит вам, если ваш бизнес зависит от этого мессенджера. </p>
+            </a>
+            <div class="card-bottom article-list__bottom">
+              <div class="card-bottom__date">12 декабря</div>
+              <a href="#" class="card-bottom__comments">
+                <svg class="card-bottom__comments-ico">
+                  <use xlink:href="img/sprite.svg#comment"></use>
+                </svg>
+                <span class="card-bottom___comments-count">30</span>
+              </a>
+              <a href="#" class="card-bottom__likes">
+                <svg class="card-bottom__likes-ico">
+                  <use xlink:href="img/sprite.svg#like"></use>
+                </svg>
+                <span class="card-bottom__likes-count">284</span>
+              </a>
+            </div>
+            <!-- /.article-card__bottom -->
+          </div>
+          <!-- /.article-list__text-wrapper -->
+        </div>
+        <!-- /.article-list__item -->
+        <div class="article-card article-list__item">
+          <img class="article-list__item-img" src="img/article-list-item-4.jpg"
+            alt="Картинка: В вашем портфолио могут быть фейковые проекты, если вы сделали...">
+          <div class="article-list__text-wrapper">
+            <span class="tag color-3BBDC4 article-list__tag">Мнения</span>
+            <a href="#" class="bookmark">
+              <svg class="bookmark__ico">
+                <use xlink:href="img/sprite.svg#bookmark"></use>
+              </svg>
+            </a>
+            <a href="#" class="article-card__article-link">
+              <h2 class="article-list__item-title">В вашем портфолио могут быть фейковые проекты, если вы сделали...
+              </h2>
+              <p class="article-list__item-text">Один из читателей предположил, что если в портфолио положить
+                несуществующий проект, то ничего страшного не произойдет. Он провел эксперимент и потенциальные
+                заказчики... </p>
+            </a>
+            <div class="card-bottom article-list__bottom">
+              <div class="card-bottom__date">20 июля</div>
+              <a href="#" class="card-bottom__comments">
+                <svg class="card-bottom__comments-ico">
+                  <use xlink:href="img/sprite.svg#comment"></use>
+                </svg>
+                <span class="card-bottom___comments-count">102</span>
+              </a>
+              <a href="#" class="card-bottom__likes">
+                <svg class="card-bottom__likes-ico">
+                  <use xlink:href="img/sprite.svg#like"></use>
+                </svg>
+                <span class="card-bottom__likes-count">1.293</span>
+              </a>
+            </div>
+            <!-- /.article-card__bottom -->
+          </div>
+          <!-- /.article-list__text-wrapper -->
+        </div>
+        <!-- /.article-list__item -->
+        <div class="article-card article-list__item">
+          <img class="article-list__item-img" src="img/article-list-item-5.jpg"
+            alt="Картинка: Список стран, куда можно улететь">
+          <div class="article-list__text-wrapper">
+            <span class="tag color-FF4F52 article-list__tag">горячее</span>
+            <a href="#" class="bookmark">
+              <svg class="bookmark__ico">
+                <use xlink:href="img/sprite.svg#bookmark"></use>
+              </svg>
+            </a>
+            <a href="#" class="article-card__article-link">
+              <h2 class="article-list__item-title">Список стран, куда можно улететь
+              </h2>
+              <p class="article-list__item-text">Если вы приняли решение переехать в другую страну, чтобы найти там
+                работу, сначала посмотрите на список стран, который мы подготовили для вас. Внутри важная информация
+                про...</p>
+            </a>
+            <div class="card-bottom article-list__bottom">
+              <div class="card-bottom__date">22 октября</div>
+              <a href="#" class="card-bottom__comments">
+                <svg class="card-bottom__comments-ico">
+                  <use xlink:href="img/sprite.svg#comment"></use>
+                </svg>
+                <span class="card-bottom___comments-count">5</span>
+              </a>
+              <a href="#" class="card-bottom__likes">
+                <svg class="card-bottom__likes-ico">
+                  <use xlink:href="img/sprite.svg#like"></use>
+                </svg>
+                <span class="card-bottom__likes-count">82</span>
+              </a>
+            </div>
+            <!-- /.article-card__bottom -->
+          </div>
+          <!-- /.article-list__text-wrapper -->
+        </div>
+        <!-- /.article-list__item -->
+        <div class="article-card article-list__item">
+          <img class="article-list__item-img" src="img/article-list-item-6.jpg"
+            alt="Картинка: Список Youtube каналов для тех, кто только начинает изучать разработку">
+          <div class="article-list__text-wrapper">
+            <span class="tag color-AC8EE3 article-list__tag">Подборки</span>
+            <a href="#" class="bookmark">
+              <svg class="bookmark__ico">
+                <use xlink:href="img/sprite.svg#bookmark"></use>
+              </svg>
+            </a>
+            <a href="#" class="article-card__article-link">
+              <h2 class="article-list__item-title">Список Youtube каналов для тех, кто только начинает изучать
+                разработку
+              </h2>
+              <p class="article-list__item-text">Мы собрали на одной странице кучу ссылок на полезные русскоязычные
+                каналы, посвященные айти. Тут можно найти видеоуроки, лекции и бесплатные курсы. </p>
+            </a>
+            <div class="card-bottom article-list__bottom">
+              <div class="card-bottom__date">26 октября</div>
+              <a href="#" class="card-bottom__comments">
+                <svg class="card-bottom__comments-ico">
+                  <use xlink:href="img/sprite.svg#comment"></use>
+                </svg>
+                <span class="card-bottom___comments-count">101</span>
+              </a>
+              <a href="#" class="card-bottom__likes">
+                <svg class="card-bottom__likes-ico">
+                  <use xlink:href="img/sprite.svg#like"></use>
+                </svg>
+                <span class="card-bottom__likes-count">432</span>
+              </a>
+            </div>
+            <!-- /.article-card__bottom -->
+          </div>
+          <!-- /.article-list__text-wrapper -->
+        </div>
+        <!-- /.article-list__item -->
+      </div>
+      <!-- /.article-list__recommend -->
+
+      <div class="article-list__last-wrapper">
+        <div class="article-list__last">
+          <span class="article-list__last-recomendation">Недавно опубликовано</span>
+          <div class="article-list__last-items-wrapper">
+            <div class="article-list__last-item-wrapper">
+              <a href="#" class="article-list__last-item">
+                <img src="img/article-list__last-img-1.jpg" alt="Картинка: Работа на удаленке, как это теперь"
+                  class="article-list__last-img">
+                <div class="article-list__last-text-wrapper">
+                  <p class="article-list__last-text">Работа на удаленке, как это теперь</p>
+                  <div class="card-bottom article-list__last-bottom">
+                    <div class="card-bottom__date">15 минут назад</div>
+                  </div>
+                </div>
+              </a>
+              <!-- /.article-list__last-item -->
+            </div>
+            <!-- /.article-list__last-item-wrapper -->
+            <div class="article-list__last-item-wrapper">
+              <a href="#" class="article-list__last-item">
+                <img src="img/article-list__last-img-2.jpg" alt="Картинка: Для чего нужен Node.js и с чем..."
+                  class="article-list__last-img">
+                <div class="article-list__last-text-wrapper">
+                  <p class="article-list__last-text">Для чего нужен Node.js и с чем...</p>
+                  <div class="card-bottom article-list__last-bottom">
+                    <div class="card-bottom__date">32 минут назад</div>
+                  </div>
+                </div>
+              </a>
+              <!-- /.article-list__last-item -->
+            </div>
+            <div class="article-list__last-item-wrapper">
+              <a href="#" class="article-list__last-item">
+                <img src="img/article-list__last-img-3.jpg" alt="Картинка: Работа в Google: собеседования и..."
+                  class="article-list__last-img">
+                <div class="article-list__last-text-wrapper">
+                  <p class="article-list__last-text">Работа в Google: собеседования и...</p>
+                  <div class="card-bottom article-list__last-bottom">
+                    <div class="card-bottom__date">38 минут назад</div>
+                  </div>
+                </div>
+              </a>
+              <!-- /.article-list__last-item -->
+            </div>
+            <div class="article-list__last-item-wrapper">
+              <a href="#" class="article-list__last-item">
+                <img src="img/article-list__last-img-4.jpg" alt="Картинка: Переезд в Нью Йорк для работы по..."
+                  class="article-list__last-img">
+                <div class="article-list__last-text-wrapper">
+                  <p class="article-list__last-text">Переезд в Нью Йорк для работы по...</p>
+                  <div class="card-bottom article-list__last-bottom">
+                    <div class="card-bottom__date">53 минут назад</div>
+                  </div>
+                </div>
+              </a>
+              <!-- /.article-list__last-item -->
+            </div>
+            <div class="article-list__last-item-wrapper">
+              <a href="#" class="article-list__last-item">
+                <img src="img/article-list__last-img-5.jpg" alt="Картинка: Почему родители против того, чтобы...."
+                  class="article-list__last-img">
+                <div class="article-list__last-text-wrapper">
+                  <p class="article-list__last-text">Почему родители против того, чтобы...</p>
+                  <div class="card-bottom article-list__last-bottom">
+                    <div class="card-bottom__date">1 час назад</div>
+                  </div>
+                </div>
+              </a>
+              <!-- /.article-list__last-item -->
+            </div>
+            <div class="article-list__last-item-wrapper">
+              <a href="#" class="article-list__last-item">
+                <img src="img/article-list__last-img-6.jpg" alt="Картинка: Прокрастинация:  побороть отклады..."
+                  class="article-list__last-img">
+                <div class="article-list__last-text-wrapper">
+                  <p class="article-list__last-text">Прокрастинация: побороть отклады...</p>
+                  <div class="card-bottom article-list__last-bottom">
+                    <div class="card-bottom__date">1 час назад</div>
+                  </div>
+                </div>
+              </a>
+              <!-- /.article-list__last-item -->
+            </div>
+            <div class="article-list__last-item-wrapper">
+              <a href="#" class="article-list__last-item">
+                <img src="img/article-list__last-img-7.jpg" alt="Картинка: Правки от заказчика могут быть..."
+                  class="article-list__last-img">
+                <div class="article-list__last-text-wrapper">
+                  <p class="article-list__last-text">Правки от заказчика могут быть...</p>
+                  <div class="card-bottom article-list__last-bottom">
+                    <div class="card-bottom__date">2 часа назад</div>
+                  </div>
+                </div>
+              </a>
+              <!-- /.article-list__last-item -->
+            </div>
+          </div>
+          <!-- /.article-list__last-wrapper -->
+          <a href="#" class="article-list__last-read">
+            Read more
+          </a>
+          <!-- /.article-list__last-read -->
+        </div>
+        <!-- /.article-list__last -->
+      </div>
+    </div>
+    <!-- /.container article-list__container -->
+  </section>
+  <!-- /.article-list -->
+
+  <section class="slider-section">
+    <div class="container slider-section__container">
+      <div class="slider-section__slider">
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slider-section__slide">
+            <img class="slider-section__slide-bg" src=" img/slider-section__slide-1.jpg"
+              alt="Картинка: Выбор читателей: где удобнее работать фрилансеру">
+            <span class="hot">Горячее</span>
+            <a href="#" class="profile slider-section__profile">
+              <img src="img/avatar-2.jpg" alt="User avatar" class="profile__avatar">
+              <div class="profile__text">
+                <span class="profile__name">Оксана Пушкина</span>
+                <span class="profile__job">Фотограф</span>
+              </div>
+            </a>
+            <!-- /.profile header-content__profile -->
+            <h2 class="slider-section__slide-title">
+              Выбор читателей: где удобнее работать фрилансеру
+            </h2>
+
+            <a href="" class="button see-more slider-section__see-more">
+              <svg class="see-more__ico">
+                <use xlink:href="img/sprite.svg#photo"></use>
+              </svg>
+              <span class="see-more__label">Смотреть фото</span>
+              <span class="see-more__count">26</span>
+            </a>
+
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide slider-section__slide">
+            <img class="slider-section__slide-bg" src=" img/slider-section__slide-1.jpg"
+              alt="Картинка: Выбор читателей: где удобнее работать фрилансеру">
+            <span class="hot">Горячее</span>
+            <a href="#" class="profile slider-section__profile">
+              <img src="img/avatar-2.jpg" alt="User avatar" class="profile__avatar">
+              <div class="profile__text">
+                <span class="profile__name">Оксана Пушкина</span>
+                <span class="profile__job">Фотограф</span>
+              </div>
+            </a>
+            <!-- /.profile header-content__profile -->
+            <h2 class="slider-section__slide-title">
+              Выбор читателей: где удобнее работать фрилансеру
+            </h2>
+
+            <a href="" class="button see-more slider-section__see-more">
+              <svg class="see-more__ico">
+                <use xlink:href="img/sprite.svg#photo"></use>
+              </svg>
+              <span class="see-more__label">Смотреть фото</span>
+              <span class="see-more__count">26</span>
+            </a>
+
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide slider-section__slide">
+            <img class="slider-section__slide-bg" src=" img/slider-section__slide-1.jpg"
+              alt="Картинка: Выбор читателей: где удобнее работать фрилансеру">
+            <span class="hot">Горячее</span>
+            <a href="#" class="profile slider-section__profile">
+              <img src="img/avatar-2.jpg" alt="User avatar" class="profile__avatar">
+              <div class="profile__text">
+                <span class="profile__name">Оксана Пушкина</span>
+                <span class="profile__job">Фотограф</span>
+              </div>
+            </a>
+            <!-- /.profile header-content__profile -->
+            <h2 class="slider-section__slide-title">
+              Выбор читателей: где удобнее работать фрилансеру
+            </h2>
+
+            <a href="" class="button see-more slider-section__see-more">
+              <svg class="see-more__ico">
+                <use xlink:href="img/sprite.svg#photo"></use>
+              </svg>
+              <span class="see-more__label">Смотреть фото</span>
+              <span class="see-more__count">26</span>
+            </a>
+
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide slider-section__slide">
+            <img class="slider-section__slide-bg" src=" img/slider-section__slide-1.jpg"
+              alt="Картинка: Выбор читателей: где удобнее работать фрилансеру">
+            <span class="hot">Горячее</span>
+            <a href="#" class="profile slider-section__profile">
+              <img src="img/avatar-2.jpg" alt="User avatar" class="profile__avatar">
+              <div class="profile__text">
+                <span class="profile__name">Оксана Пушкина</span>
+                <span class="profile__job">Фотограф</span>
+              </div>
+            </a>
+            <!-- /.profile header-content__profile -->
+            <h2 class="slider-section__slide-title">
+              Выбор читателей: где удобнее работать фрилансеру
+            </h2>
+
+            <a href="" class="button see-more slider-section__see-more">
+              <svg class="see-more__ico">
+                <use xlink:href="img/sprite.svg#photo"></use>
+              </svg>
+              <span class="see-more__label">Смотреть фото</span>
+              <span class="see-more__count">26</span>
+            </a>
+
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide slider-section__slide">
+            <img class="slider-section__slide-bg" src=" img/slider-section__slide-1.jpg"
+              alt="Картинка: Выбор читателей: где удобнее работать фрилансеру">
+            <span class="hot">Горячее</span>
+            <a href="#" class="profile slider-section__profile">
+              <img src="img/avatar-2.jpg" alt="User avatar" class="profile__avatar">
+              <div class="profile__text">
+                <span class="profile__name">Оксана Пушкина</span>
+                <span class="profile__job">Фотограф</span>
+              </div>
+            </a>
+            <!-- /.profile header-content__profile -->
+            <h2 class="slider-section__slide-title">
+              Выбор читателей: где удобнее работать фрилансеру
+            </h2>
+
+            <a href="" class="button see-more slider-section__see-more">
+              <svg class="see-more__ico">
+                <use xlink:href="img/sprite.svg#photo"></use>
+              </svg>
+              <span class="see-more__label">Смотреть фото</span>
+              <span class="see-more__count">26</span>
+            </a>
+
+          </div>
+          <!-- /.swiper-slide -->
+        </div>
+        <!-- /.swiper-wrapper -->
+        <div class="slider-section__slider-pagination"></div>
+      </div>
+      <!-- /.slider-section__slider -->
+    </div>
+    <!-- /.container slider-section__container -->
+  </section>
+  <!-- /.slider-section -->
 
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.min.js"></script>
