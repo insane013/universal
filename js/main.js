@@ -39,6 +39,7 @@ $(document).ready(function () {
     speed: 1000,
     pagination: {
       el: '.slider-section__slider-pagination',
+      clickable: true,
     },
 
   });

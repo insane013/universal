@@ -4,6 +4,8 @@
   &__container
     display: grid
     grid-template-columns: repeat(4, 1fr)
+    grid-auto-rows: 170px
+    grid-gap: 30px
   &__slider
     width: 100%
     height: 100%
@@ -45,7 +47,72 @@
   &__see-more
     margin: 0 auto
 
-.swiper-container-horizontal>.swiper-pagination-bullets
+  &__card
+    padding: 35px
+    padding-bottom: 50px
+    z-index: 0
+    position: relative
+    &--big
+      background: #B4D1E0
+      &::before
+        position: absolute
+        content: ''
+        width: 260px
+        height: 260px
+        z-index: -1
+        top: 65px
+        background-color: #ffffff
+        border-radius: 50%
+        right: 30px
+        top: 65px
+    &--small
+      padding: 25px
+    &-info
+      &--big
+        margin-bottom: 45px
+    &-title
+      color: $dark
+      margin: 0
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 125%
+      display: block
+      z-index: 3
+      overflow-y: hidden
+      display: -webkit-box
+      -webkit-line-clamp: 3
+      -webkit-box-orient: vertical
+      &--big
+        margin: 20px 0
+        margin-bottom: 15px
+        font-size: 25px
+        line-height: 125%
+        max-width: 50%
+    &-text
+      font-weight: normal
+      text-decoration: none
+      font-size: 14px
+      line-height: 125%
+      color: $text-color
+      margin: 0
+      max-width: 228px
+      z-index: 3
+      overflow-y: hidden
+      display: -webkit-box
+      -webkit-line-clamp: 3
+      -webkit-box-orient: vertical
+  &__bg
+    z-index: -1
+    position: absolute
+    object-fit: cover
+    width: 100%
+    height: 100%
+    top: 0
+    right: 0
+
+.slider-section__slider>.swiper-pagination-bullets
   display: flex
   justify-content: center
   position: absolute
@@ -58,6 +125,7 @@
     height: 8px
     background: #D9DADB
     border-radius: 50%
+    cursor: pointer
     &:last-child
       margin-right: 0
     &-active

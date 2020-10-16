@@ -136,6 +136,11 @@
       &-img
         width: 45px
 
+  .slider-section
+    &__card
+      .article-card__title--type-4
+        margin-bottom: 25px
+
 @media (max-width: 992px)
   .container
     max-width: 740px
@@ -314,6 +319,10 @@
     &__recommend
       grid-column: span 4
 
+  .slider-section
+    &__slider
+      grid-column: span 4
+
 @media (max-width: 768px)
   .container
     max-width: 700px
@@ -449,7 +458,7 @@
         -webkit-line-clamp: 5
       &-title
         -webkit-line-clamp: 3
-      &-img
+      &-img-link
         width: 100%
         flex-basis: 100%
         min-height: 200px
@@ -457,8 +466,14 @@
         margin-right: 0
         margin-bottom: 30px
         border-radius: 10px
+        overflow: hidden
   &-title
     font-size: 20px
+
+  .slider-section
+    &__card
+      &--big
+        grid-column: span 4
 
 @media (max-width: 576px)
   .header
@@ -540,6 +555,27 @@
     &__item
       padding-right: 10px
       padding-left: 10px
+      &-img-link
+        min-width: 100%
+
+  .slider-section
+    &__card
+      &--big
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+      &-title
+        &--big
+          max-width: 100%
+          margin-bottom: 30px
+      &-text
+        &--big
+          -webkit-line-clamp: 5
+          max-width: 70%
+      &::before
+        display: none
+    &__bg
+      display: none
 
 @media ( max-width: 380px )
   .article-card

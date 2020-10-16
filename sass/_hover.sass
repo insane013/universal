@@ -38,6 +38,7 @@
         color: $interactive
       .article-list__item-title, .article-list__item-text
         color: $interactive
+
   .article-card
     &__author
       &-name
@@ -72,6 +73,12 @@
         color: $interactive
         .card-bottom__comments-ico
           fill: $interactive
+
+  .article-list__item-img-link
+    &:hover, &:focus
+      &::before
+        display: block
+
   .article-list__last
     &-item-wrapper
       &:hover, &:focus
@@ -79,3 +86,8 @@
     &-read
       &:hover, &:focus
         background-color: darken(#ffffff, 20%)
+
+  .article-link
+    &:hover, &:focus
+      .slider-section__card-title, .slider-section__card-text,
+        color: $interactive

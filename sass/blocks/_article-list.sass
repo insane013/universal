@@ -1,6 +1,7 @@
 .article-list
   background-color: $light
   padding: 60px 0
+  padding-bottom: 50px
   &__container
     display: grid
     grid-template-columns: repeat(4, 1fr)
@@ -11,6 +12,8 @@
     background-color: #ffffff
     padding: 25px
     border-radius: 10px
+  &__bottom
+    margin-bottom: 5px
   &__last
     border-radius: 10px
     background-color: #ffffff
@@ -102,6 +105,7 @@
     position: relative
     background-color: transparent
     min-height: 195px
+    max-height: 245px
     &::after
       content: ''
       position: absolute
@@ -116,10 +120,24 @@
       &::after
         display: none
     &-img
-      width: 336px
-      min-height: 100%
-      margin-right: 20px
+      width: 100%
+      height: 100%
       object-fit: cover
+      &-link
+        position: relative
+        min-width: 336px
+        height: 100%
+        margin-right: 25px
+        &::before
+          display: none
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          z-index: 1
+          background: rgba($interactive, 0.4)
     &-title
       font-family: Roboto Slab
       font-style: normal
@@ -141,6 +159,7 @@
       line-height: 143%
       text-decoration: none
       color: $text-color
+      margin: 0
       margin-bottom: 20px
       overflow: hidden
       display: -webkit-box
