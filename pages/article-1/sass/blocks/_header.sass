@@ -1,0 +1,119 @@
+.header
+  &-top
+    background-color: #ffffff
+    &-container
+      padding-bottom: 15px
+  &-main
+    position: relative
+    padding-top: 63px
+    padding-bottom: 72px
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75))
+    &__bg
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &__content-container
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+    &__tag
+      z-index: 1
+    &__title
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 55px
+      line-height: 127%
+      color: #ffffff
+      flex-basis: 100%
+      max-width: 750px
+      margin: 52px 0 30px 0
+      z-index: 1
+
+    &__text-block
+      max-width: 632px
+      color: #FFFFFF
+      opacity: 0.85
+      flex-basis: 100%
+      margin-bottom: 43px
+      z-index: 1
+
+    &__card-bottom
+      flex-basis: 100%
+      z-index: 1
+
+    &__bookmark
+      position: absolute
+      z-index: 1
+      top: 151px
+      width: 21px
+      height: 27px
+      .bookmark__ico
+        width: 21px
+        height: 27px
+
+.menu
+  &__link
+    color: $secondary
+
+.search__input
+  background-color: #f5f5f5
+  color: $secondary
+  &-wrapper
+    background-color: transparent
+
+.navigation
+  display: flex
+  align-items: center
+  z-index: 1
+  &__elem
+    text-decoration: none
+    display: flex
+    align-items: center
+  &__ico
+    width: 18px
+    height: 18px
+    fill: #ffffff
+    margin-right: 8px
+  &__label
+    color: #ffffff
+  &__on-main
+    margin-right: 32px
+    &-ico
+      height: 20px
+  &__back
+    margin-right: 20px
+    &-ico
+      width: 15px
+      height: 7px
+      margin-right: 8px
+  &__next-ico
+    margin-left: 8px
+    width: 15px
+    height: 7px
+
+.header
+  .card-bottom
+    &__date
+      display: flex
+      align-items: center
+      margin-right: 21px
+      &-ico
+        width: 14px
+        height: 17px
+        fill: #ffffff
+        margin-right: 6px
+    &__comments
+      margin-right: 0
+    &__likes
+      margin-right: 21px

@@ -44,4 +44,21 @@ $(document).ready(function () {
 
   });
 
+  $('.subscribe__form').validate({
+    rules: {
+      email: {
+        required: true,
+        minlength: 5,
+        email: true
+      }
+    },
+    messages: {
+      email: {
+        required: "*Введите адрес электронной почты!",
+        minlength: jQuery.validator.format("*Адрес почты должен содержать не менее {0} символов!"),
+        email: "*Введите корректный адрес!"
+      }
+    }
+  },);
+
 });

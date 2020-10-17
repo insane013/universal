@@ -141,6 +141,31 @@
       .article-card__title--type-4
         margin-bottom: 25px
 
+  .footer
+    &-grid
+      grid-template-columns: repeat(3, 1fr)
+      grid-row-gap: 30px
+      grid-auto-rows: min-content
+    &-menu
+      flex-wrap: wrap
+      justify-content: center
+      &__list
+        justify-content: space-between
+        flex-basis: 100%
+        margin-bottom: 30px
+    &-bottom
+      flex-wrap: wrap
+      justify-content: center
+      &__info
+        max-width: 100%
+        flex-basis: 100%
+        margin-bottom: 30px
+        text-align: center
+
+  .subscribe
+    &__title
+      font-size: 30px
+
 @media (max-width: 992px)
   .container
     max-width: 740px
@@ -322,6 +347,12 @@
   .slider-section
     &__slider
       grid-column: span 4
+    &__card
+      &-title
+        &--big
+          max-width: 75%
+    &__bg
+      right: -30px
 
 @media (max-width: 768px)
   .container
@@ -453,6 +484,7 @@
     padding-bottom: 40px
     &__item
       min-height: auto
+      max-height: min-content
       flex-wrap: wrap
       &-text
         -webkit-line-clamp: 5
@@ -474,6 +506,15 @@
     &__card
       &--big
         grid-column: span 4
+
+  .footer
+    &-grid
+      grid-template-columns: repeat(2, 1fr)
+    &-menu
+      &__list
+        margin-bottom: 15px
+      &__item:not(:last-child)
+        margin-right: 10px
 
 @media (max-width: 576px)
   .header
@@ -566,7 +607,7 @@
         justify-content: space-between
       &-title
         &--big
-          max-width: 100%
+          max-width: 80%
           margin-bottom: 30px
       &-text
         &--big
@@ -575,7 +616,59 @@
       &::before
         display: none
     &__bg
-      display: none
+      right: -40px
+    &__slide
+      padding-top: 100px
+      &-title
+        font-size: 25px
+
+  .footer
+    padding-top: 30px
+    &-social
+      flex-direction: column
+      align-items: flex-start
+      width: auto
+      &__item
+        display: flex
+        align-items: center
+        margin-right: 0
+        margin-bottom: 15px
+      &__link
+        margin-right: 10px
+        &-text
+          display: block
+          text-decoration: none
+          font-weight: 900
+          font-size: 12px
+          color: $dark
+    &-menu
+      justify-content: space-between
+      align-items: center
+      &__list
+        flex-direction: column
+        align-items: flex-start
+        flex-basis: auto
+      &__item
+        margin-bottom: 10px
+    &__subscribe
+      margin-bottom: 30px
+    &-bottom
+      &__info
+        font-size: 12px
+
+  .subscribe
+    &__form
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: nowrap
+      width: 100%
+    &__input
+      width: 70%
+    &__button
+
+    &__title
+      font-size: 25px
 
 @media ( max-width: 380px )
   .article-card
@@ -597,3 +690,11 @@
         font-size: 15px
       &-text
         font-size: 13px
+  .subscribe
+    &__form
+      flex-wrap: wrap
+    &__input
+      width: 100%
+      margin-bottom: 10px
+    &__button
+      width: 100%

@@ -1,0 +1,270 @@
+.main
+  padding-top: 60px
+  background-color: #ffffff
+  position: relative
+  &-aside
+    display: flex
+    align-items: flex-start
+  &__content-container
+    display: grid
+    grid-template-columns: 623px 263px
+    grid-column-gap: 60px
+  &__text-block
+    color: $text-color
+    letter-spacing: 0.1px
+  &__section
+    &--slider
+      padding-bottom: 0
+      overflow: hidden
+      border-radius: 0 0 10px 10px
+      border: 1px solid #D9DADB
+      margin-bottom: 30px
+      margin-top: 45px
+    &--quote
+      padding-top: 65px
+      padding-bottom: 30px
+
+    &-block
+      padding: 15px 0
+      &--npt
+        padding-top: 0
+    &-title
+      margin: 30px 0
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 25px
+      line-height: 120%
+      color: $dark
+    &-text
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 25px
+      line-height: 120%
+      color: $dark
+      margin: 0
+      z-index: 1
+      position: relative
+      &::before
+        display: block
+        content: ''
+        position: absolute
+        width: 70px
+        height: 70px
+        top: -20px
+        left: -20px
+        z-index: -1
+        background-image: url('../img/quote.svg')
+        background-repeat: no-repeat
+        background-size: cover
+  &-tags
+    &__container
+      display: flex
+      flex-wrap: wrap
+      padding: 25px 0
+      padding-bottom: 60px
+    &__tag
+      font-family: Lato
+      font-weight: 900
+      font-size: 14px
+      line-height: 143%
+      text-align: center
+      color: $dark
+      padding: 5px 15px
+      border: 1px solid #D9DADB
+      border-radius: 5px
+      margin-right: 10px
+      text-decoration: none
+  &-repost
+    padding-bottom: 60px
+    .main-content
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      padding: 30px 0
+      border-top: 1px solid #D9DADB
+    &__title
+      flex-basis: 100%
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 25px
+      line-height: 120%
+      color: $dark
+      margin: 0
+      margin-bottom: 25px
+    &__see-more
+      margin-right: 14px
+      &:last-child
+        margin: 0
+
+  &-slider
+    width: 100%
+    height: 555px
+    overflow: hidden
+    border-radius: 10px 10px 0 0
+    position: relative
+    &__slide
+      position: relative
+      &-bg
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+  .slider-arrow
+    width: 60px
+    height: 60px
+    border: none
+    cursor: pointer
+    position: absolute
+    z-index: 10
+    top: 50%
+    transform: translateY(-50%)
+    background: transparent
+    background-repeat: no-repeat
+    background-position: center
+    outline: none
+    &--prev
+      left: 35px
+      background-image: url(../img/arrow-left.svg)
+    &--next
+      right: 35px
+      background-image: url(../img/arrow-right.svg)
+
+.author
+  &__card
+    background: #FFFFFF
+    border: 1px solid #D9DADB
+    border-radius: 10px
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: -160px
+    width: 100%
+  &__content
+    display: flex
+    align-items: center
+    flex-direction: column
+    padding: 35px 25px 20px
+  &__link
+    padding: 15px 25px
+    border-top: 1px solid #D9DADB
+    font-family: Lato
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 143%
+    color: $dark
+    text-decoration: none
+    width: 100%
+    text-align: center
+  &__avatar
+    width: 90px
+    height: 90px
+    border-radius: 50%
+    object-fit: cover
+    margin-bottom: 15px
+  &__name
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 125%
+    text-align: center
+    margin: 0
+    color: $dark
+    margin-bottom: 5px
+  &__job
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 143%
+    text-align: center
+    color: $text-color
+    margin-bottom: 15px
+  &__article-count
+    font-family: Lato
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 143%
+    text-align: center
+    color: $dark
+
+.material
+  &-card
+    display: flex
+    flex-direction: column
+    width: 100%
+    max-width: 263px
+    align-self: flex-end
+    margin-bottom: 50px
+    &--bottom
+      .material__title
+        margin-bottom: 15px
+  &__tag
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 125%
+    color: $dark
+    margin-bottom: 20px
+  &__img
+    border-radius: 10px
+    overflow: hidden
+    width: 100%
+    height: 180px
+    margin-bottom: 15px
+  &__title
+    margin: 0
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 156%
+    color: $dark
+    margin-bottom: 5px
+  &__text
+    font-size: 14px
+    line-height: 143%
+    margin: 0
+    color: $text-color
+    margin-bottom: 20px
+
+.main-section
+  &__bottom
+    padding: 0 35px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__text
+    padding: 25px 0
+    padding-right: 35px
+    font-size: 14px
+    line-height: 143%
+    color: $text-color
+
+  &__profile
+    padding: 12px 0
+    padding-left: 30px
+    border-left: 1px solid #D9DADB
+    min-width: 232px
+    .profile
+      &__name
+        color: $text-color
+      &__job
+        color: $secondary
+
+.other-articles
+  background-color: #f5f5f5
+  padding: 60px 0
+  &__container
+    display: flex
+    justify-content: space-between

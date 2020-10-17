@@ -13,7 +13,7 @@ $message = $_POST['message'];
 $sType = 0;
 
 $sendTypes = array(
-    'subscribe' => 'subscribe',
+    'subscribe' => 'sub',
     'npm' => 'footer-form-send', //name phone message
     'npem' => 'booking-modal-send', //name phone email message
 );
@@ -53,7 +53,7 @@ if ($sType==3) {
 }
 
 // Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
+$title = "Новое обращение Universal!";
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -66,11 +66,11 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'mail.insane013.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'best-tour-plan@insane013.ru'; // Логин на почте
+    $mail->Username   = 'universal@insane013.ru'; // Логин на почте
     $mail->Password   = 'marsel092002'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('best-tour-plan@insane013.ru', 'Tour-plan'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('universal@insane013.ru', 'Universal'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('marsel092002@gmail.com');  

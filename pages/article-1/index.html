@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Universal</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/css/style-1.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="container header-top-container">
+        <a href="#" class="logo-link">
+          <img src="img/article-logo.svg" alt="Logo: UNIVERSAL" class="logo-img">
+        </a>
+        <nav class="menu header__menu header__menu--mobile-hidden">
+          <ul class="menu__list">
+            <li class="menu__item menu__item--mobile--visible">
+              <form action="#" class="search header__search">
+                <div class="search__input-wrapper">
+                  <input type="text" class="search__input" placeholder="Поиск">
+                  <button class="search__button">
+                    <svg class="search__button-ico">
+                      <use xlink:href="img/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                </div>
+                <!-- /.search__input-wrapper -->
+              </form>
+              <!-- /.search header__search -->
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Статьи</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Новости</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Курсы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">HTML</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">CSS</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">JavaScript</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Web Design</a>
+            </li>
+          </ul>
+          <!-- /.menu__list -->
+        </nav>
+        <!-- /.menu header__menu -->
+        <form action="#" class="search header__search header__search--mobile--hidden">
+          <div class="search__input-wrapper">
+            <input type="text" class="search__input" placeholder="Поиск">
+            <button class="search__button">
+              <svg class="search__button-ico">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- /.search__input-wrapper -->
+        </form>
+        <!-- /.search header__search -->
+        <button class="menu-btn header__menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav class="menu header__menu header__menu--mobile-visible">
+        <ul class="menu__list">
+          <li class="menu__item menu__item--mobile--visible">
+            <form action="#" class="search header__search">
+              <div class="search__input-wrapper">
+                <input type="text" class="search__input" placeholder="Поиск">
+                <button class="search__button">
+                  <svg class="search__button-ico">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </div>
+              <!-- /.search__input-wrapper -->
+            </form>
+            <!-- /.search header__search -->
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Статьи</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Новости</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Курсы</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">HTML</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">CSS</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">JavaScript</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Web Design</a>
+          </li>
+        </ul>
+        <!-- /.menu__list -->
+      </nav>
+      <!-- /.menu header__menu -->
+
+    </div>
+    <!-- /.header__top -->
+    <div class="header-main">
+      <img src="img/article-head.jpg" alt="" class="header-main__bg">
+      <div class="container header-main__container">
+        <a href="#" class="bookmark header-main__bookmark">
+          <svg class="bookmark__ico">
+            <use xlink:href="img/sprite.svg#bookmark"></use>
+          </svg>
+        </a>
+        <div class="content-container header-main__content-container">
+          <span class="tag header-main__tag col-4592FF">новости</span>
+          <div class="navigation">
+            <a href="#" class="navigation__elem navigation__on-main">
+              <svg class="navigation__ico navigation__on-main-ico">
+                <use xlink:href="img/sprite.svg#home"></use>
+              </svg>
+              <span class="navigation__label navigation__on-main-label">На главную</span>
+            </a>
+            <a href="#" class="navigation__elem navigation__back">
+              <svg class="navigation__ico navigation__back-ico">
+                <use xlink:href="img/sprite.svg#arrow-left"></use>
+              </svg>
+              <span class="navigation__label navigation__back-label">Назад</span>
+            </a>
+            <a href="#" class="navigation__elem navigation__next">
+              <span class="navigation__label navigation__next-label">Вперёд</span>
+              <svg class="navigation__ico navigation__next-ico">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+          <!-- /.navigation -->
+          <h1 class="header-main__title">Новый налоговый режим для фрилансеров — налог на проф. доход</h1>
+          <p class="text-block header-main__text-block">
+            Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает неофициально.
+            Разобрались, как работает режим и кому он подходит, а кому нет.
+          </p>
+          <div class="card-bottom header-main__card-bottom">
+            <div class="card-bottom__date">
+              <svg class="card-bottom__date-ico">
+                <use xlink:href="img/sprite.svg#clock"></use>
+              </svg>
+              <span class="card-bottom___date-label">6 августа, 10:30</span>
+            </div>
+            <a href="#" class="card-bottom__likes">
+              <svg class="card-bottom__likes-ico">
+                <use xlink:href="img/sprite.svg#like"></use>
+              </svg>
+              <span class="card-bottom__likes-count">830</span>
+            </a>
+            <a href="#" class="card-bottom__comments">
+              <svg class="card-bottom__comments-ico">
+                <use xlink:href="img/sprite.svg#comment"></use>
+              </svg>
+              <span class="card-bottom___comments-count">19</span>
+            </a>
+          </div>
+          <!-- /.article-card__bottom -->
+          <div class="text-container header-main__text-container">
+          </div>
+          <!-- /.header-main__text-container -->
+        </div>
+        <!-- /.header-main__content-container -->
+      </div>
+      <!-- /.container header-main__container -->
+    </div>
+    <!-- /.header-main -->
+  </header>
+  <!-- /.header -->
+
+  <main class="main">
+    <div class="container main__container">
+      <section class="main__section">
+        <div class="content-container main__content-container">
+          <div class="main-content">
+            <div class="main__section-block main__section-block--npt">
+              <p class="text-block main__text-block text-block--first">
+                Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                формировании дальнейших направлений развития.
+              </p>
+              <p class="text-block main__text-block">
+                Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что
+                постоянное
+                информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и
+                модернизации дальнейших направлений развития.
+              </p>
+            </div>
+            <!-- /.main__section-block -->
+            <div class="main__section-block main__section-block--npt">
+              <h2 class="main__section-title">Введение НПД в РФ</h2>
+              <p class="text-block main__text-block">
+                Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что
+                постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс
+                внедрения и модернизации
+              </p>
+            </div>
+            <!-- /.main__section-block -->
+            <div class="main__section-block">
+              <p class="text-block main__text-block">
+                Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна,
+              </p>
+            </div>
+            <!-- /.main__section-block -->
+            <div class="main__section-block">
+              <p class="text-block main__text-block">
+                Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что
+                постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс
+                внедрения и модернизации
+              </p>
+            </div>
+            <!-- /.main__section-block -->
+          </div>
+          <!-- /.main-content -->
+          <div class="main-aside">
+            <div class="author__card">
+              <div class="author__content">
+                <img src="img/avatar.png" alt="" class="author__avatar">
+                <h2 class="author__name">Мира Стахова</h2>
+                <span class="author__job">Фрилансер</span>
+                <span class="author__article-count">82 статьи</span>
+              </div>
+              <a href="#" class="author__link">Страница автора</a>
+            </div>
+            <!-- /.author__card -->
+          </div>
+          <!-- /.main-aside -->
+        </div>
+        <!-- /.content-container main__content-container -->
+      </section>
+      <!-- /.main__section -->
+
+      <section class="main__section main__section--slider">
+        <div class="main-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide main-slider__slide">
+              <img src="img/slider-1.jpg" alt="" class="main-slider__slide-bg">
+            </div>
+            <!-- /.slide -->
+          </div>
+
+          <button class="slider-arrow slider-arrow--prev"></button>
+          <button class="slider-arrow slider-arrow--next"></button>
+        </div>
+        <!-- /.slider -->
+        <div class="main-section__bottom">
+          <span class="main-section__text">
+            Geostatistics deal with quantitative data analysis, specifically the
+            application of statistical methodology
+          </span>
+          <a href="#" class="profile main-section__profile">
+            <img src="img/avatar-2.png" alt="User avatar" class="profile__avatar">
+            <div class="profile__text">
+              <span class="profile__name">Андрей Вашигаев</span>
+              <span class="profile__job">Фотограф</span>
+            </div>
+          </a>
+          <!-- /.profile header-content__profile -->
+        </div>
+        <!-- /.main-section__bottom -->
+      </section>
+      <!-- /.section -->
+
+      <section class="main__section">
+        <div class="content-container main__content-container">
+          <div class="main-content">
+            <div class="main__section-block">
+              <p class="text-block main__text-block">
+                Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что
+                постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс
+                внедрения и модернизации дальнейших направлений развития.
+              </p>
+            </div>
+            <!-- /.main__section-block -->
+            <div class="main__section-block">
+              <p class="text-block main__text-block">
+                Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что
+                постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс
+                внедрения и модернизации
+              </p>
+            </div>
+            <!-- /.main__section-block -->
+            <div class="main__section-block">
+              <p class="text-block main__text-block">
+                Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что
+                постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс
+                внедрения и модернизации дальнейших направлений развития. Таким образом консультация с широким активом
+                способствует подготовки и реализации направлений
+              </p>
+            </div>
+            <!-- /.main__section-block -->
+
+          </div>
+          <!-- /.main-content -->
+          <div class="main-aside">
+            <div class="material-card">
+              <h2 class="material__tag">Материал по теме</h2>
+              <img src="img/aside-1.png" alt="" class="material__img">
+              <h3 class="material__title">20+ инструментов для js-разработчика</h3>
+              <p class="material__text">Узнайте, какими инструментами вы еще не пользовались, а могли бы. Эти
+                инструменты помогут вам ускорить свою работу или повысить ее качество. Все инструменты собраны в
+                виде...</p>
+              <div class="card-bottom header-main__card-bottom">
+                <a href="#" class="card-bottom__views">
+                  <svg class="card-bottom__views-ico">
+                    <use xlink:href="img/sprite.svg#view"></use>
+                  </svg>
+                  <span class="card-bottom__views-count">1623</span>
+                </a>
+                <a href="#" class="card-bottom__comments">
+                  <svg class="card-bottom__comments-ico">
+                    <use xlink:href="img/sprite.svg#comment"></use>
+                  </svg>
+                  <span class="card-bottom___comments-count">102</span>
+                </a>
+              </div>
+              <!-- /.article-card__bottom -->
+            </div>
+            <!-- /.material-card -->
+          </div>
+          <!-- /.main-aside -->
+        </div>
+        <!-- /.content-container main__content-container -->
+      </section>
+      <!-- /.main__section -->
+
+      <section class="main__section main__section--quote">
+        <div class="content-container main__content-container">
+          <div class="main-content">
+            <p class="main__section-text">
+              Таким образом консультация с широким активом способствует подготовки и
+              реализации направлений прогрессивного развития. Не следует, однако забывать, что новая модель
+              организационной деятельности в значительной степени обуславливает.
+            </p>
+          </div>
+          <!-- /.main-content -->
+        </div>
+        <!-- /.content-container main__content-container -->
+      </section>
+      <!-- /.main__section -->
+
+      <section class="main__section">
+        <div class="content-container main__content-container">
+          <div class="main-content">
+            <div class="main__section-block">
+              <p class="text-block main__text-block">
+                Таким образом консультация с широким активом способствует подготовки и реализации направлений
+                прогрессивного развития. Не следует, однако забывать, что новая модель организационной деятельности в
+                значительной степени обуславливает создание модели развития. Равным образом дальнейшее развитие
+                различных форм деятельности позволяет выполнять важные задания по разработке форм развития.
+                Разнообразный и богатый опыт постоянный количественный
+              </p>
+            </div>
+            <!-- /.main__section-block -->
+            <div class="main__section-block">
+              <p class="text-block main__text-block">
+                Задача организации, в особенности же консультация с широким активом требуют от нас анализа новых
+                предложений. Повседневная практика показывает, что постоянный количественный рост и сфера нашей
+              </p>
+            </div>
+            <!-- /.main__section-block -->
+
+          </div>
+          <!-- /.main-content -->
+        </div>
+        <!-- /.content-container main__content-container -->
+      </section>
+      <!-- /.main__section -->
+
+      <div class="main-tags">
+        <div class="content-container main__content-container">
+          <div class="main-content main-tags__container">
+            <a href="#" class="main-tags__tag">Travel</a>
+            <a href="#" class="main-tags__tag">Destinations</a>
+            <a href="#" class="main-tags__tag">Nature</a>
+            <a href="#" class="main-tags__tag">World</a>
+            <a href="#" class="main-tags__tag">Alaska</a>
+          </div>
+          <!-- /.main-content -->
+        </div>
+        <!-- /.content-container main__content-container -->
+      </div>
+      <!-- /.tags main-tags -->
+
+      <div class="main-repost">
+        <div class="content-container main__content-container">
+          <div class="main-content">
+            <h2 class="main-repost__title">Поддержите репостом</h2>
+            <a href="" class="button see-more main-repost__see-more">
+              <svg class="see-more__ico">
+                <use xlink:href="img/sprite.svg#like"></use>
+              </svg>
+              <span class="see-more__label">Like it</span>
+              <span class="see-more__count">42</span>
+            </a>
+            <a href="" class="button see-more main-repost__see-more">
+              <svg class="see-more__ico">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
+              <span class="see-more__label">Share</span>
+              <span class="see-more__count">80</span>
+            </a>
+            <a href="" class="button see-more main-repost__see-more">
+              <svg class="see-more__ico">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+              <span class="see-more__label">Tweet</span>
+              <span class="see-more__count">33</span>
+            </a>
+          </div>
+          <!-- /.main-content -->
+        </div>
+        <!-- /.content-container main__content-container -->
+      </div>
+      <!-- /.main-repost -->
+    </div>
+    <!-- /.container main__container -->
+  </main>
+  <!-- /.main -->
+
+  <div class="other-articles">
+    <div class="container other-articles__container">
+      <div class="material-card material-card--bottom">
+        <img src="img/aside-2.png" alt="" class="material__img">
+        <h3 class="material__title">Техника работы по помидоркам — это как? </h3>
+        <div class="card-bottom header-main__card-bottom">
+          <a href="#" class="card-bottom__views">
+            <svg class="card-bottom__views-ico">
+              <use xlink:href="img/sprite.svg#view"></use>
+            </svg>
+            <span class="card-bottom__views-count">1904</span>
+          </a>
+          <a href="#" class="card-bottom__comments">
+            <svg class="card-bottom__comments-ico">
+              <use xlink:href="img/sprite.svg#comment"></use>
+            </svg>
+            <span class="card-bottom___comments-count">82</span>
+          </a>
+        </div>
+        <!-- /.article-card__bottom -->
+      </div>
+      <!-- /.material-card -->
+      <div class="material-card material-card--bottom">
+        <img src="img/aside-3.png" alt="" class="material__img">
+        <h3 class="material__title">Вопросы на собеседовании для джуна</h3>
+        <div class="card-bottom header-main__card-bottom">
+          <a href="#" class="card-bottom__views">
+            <svg class="card-bottom__views-ico">
+              <use xlink:href="img/sprite.svg#view"></use>
+            </svg>
+            <span class="card-bottom__views-count">2.873</span>
+          </a>
+          <a href="#" class="card-bottom__comments">
+            <svg class="card-bottom__comments-ico">
+              <use xlink:href="img/sprite.svg#comment"></use>
+            </svg>
+            <span class="card-bottom___comments-count">982</span>
+          </a>
+        </div>
+        <!-- /.article-card__bottom -->
+      </div>
+      <!-- /.material-card -->
+      <div class="material-card material-card--bottom">
+        <img src="img/aside-4.png" alt="" class="material__img">
+        <h3 class="material__title">Список стран, куда можно улететь</h3>
+        <div class="card-bottom header-main__card-bottom">
+          <a href="#" class="card-bottom__views">
+            <svg class="card-bottom__views-ico">
+              <use xlink:href="img/sprite.svg#view"></use>
+            </svg>
+            <span class="card-bottom__views-count">821</span>
+          </a>
+          <a href="#" class="card-bottom__comments">
+            <svg class="card-bottom__comments-ico">
+              <use xlink:href="img/sprite.svg#comment"></use>
+            </svg>
+            <span class="card-bottom___comments-count">30</span>
+          </a>
+        </div>
+        <!-- /.article-card__bottom -->
+      </div>
+      <!-- /.material-card -->
+      <div class="material-card material-card--bottom">
+        <img src="img/aside-5.png" alt="" class="material__img">
+        <h3 class="material__title">В вашем портфолио могут быть фейковые работы</h3>
+        <div class="card-bottom header-main__card-bottom">
+          <a href="#" class="card-bottom__views">
+            <svg class="card-bottom__views-ico">
+              <use xlink:href="img/sprite.svg#view"></use>
+            </svg>
+            <span class="card-bottom__views-count">5030</span>
+          </a>
+          <a href="#" class="card-bottom__comments">
+            <svg class="card-bottom__comments-ico">
+              <use xlink:href="img/sprite.svg#comment"></use>
+            </svg>
+            <span class="card-bottom___comments-count">495</span>
+          </a>
+        </div>
+        <!-- /.article-card__bottom -->
+      </div>
+      <!-- /.material-card -->
+    </div>
+    <!-- /.container other-articles__container -->
+  </div>
+  <!-- /.other-articles -->
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
