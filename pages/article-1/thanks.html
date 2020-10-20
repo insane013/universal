@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Universal - Ваш комментарий был отправлен на проверку! Ожидайте!</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+
+<body>
+
+  <header class="header" id="top">
+    <h1 style="display: none;">Hidden h1 title</h1>
+    <div class="header-top">
+      <div class="container header-top-container" style="padding-bottom: 15px;">
+        <a href="index.html" class="logo-link">
+          <img src="img/logo.svg" alt="Logo: UNIVERSAL" class="logo-img">
+        </a>
+        <nav class="menu header__menu header__menu--mobile-hidden">
+          <ul class="menu__list">
+            <li class="menu__item menu__item--mobile--visible">
+              <form action="#" class="search header__search">
+                <div class="search__input-wrapper">
+                  <input type="text" class="search__input" placeholder="Поиск">
+                  <button class="search__button">
+                    <svg class="search__button-ico">
+                      <use xlink:href="img/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                </div>
+                <!-- /.search__input-wrapper -->
+              </form>
+              <!-- /.search header__search -->
+            </li>
+            <li class="menu__item">
+              <a href="../article-2/index.html" class="menu__link">Статьи</a>
+            </li>
+            <li class="menu__item">
+              <a href="../article-2/index.html" class="menu__link">Новости</a>
+            </li>
+            <li class="menu__item">
+              <a href="../article-2/index.html" class="menu__link">Курсы</a>
+            </li>
+            <li class="menu__item">
+              <a href="../article-2/index.html" class="menu__link">HTML</a>
+            </li>
+            <li class="menu__item">
+              <a href="../article-2/index.html" class="menu__link">CSS</a>
+            </li>
+            <li class="menu__item">
+              <a href="../article-2/index.html" class="menu__link">JavaScript</a>
+            </li>
+            <li class="menu__item">
+              <a href="../article-2/index.html" class="menu__link">Web Design</a>
+            </li>
+          </ul>
+          <!-- /.menu__list -->
+        </nav>
+        <!-- /.menu header__menu -->
+        <form action="#" class="search header__search header__search--mobile--hidden">
+          <div class="search__input-wrapper">
+            <input type="text" class="search__input" placeholder="Поиск">
+            <button class="search__button">
+              <svg class="search__button-ico">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- /.search__input-wrapper -->
+        </form>
+        <!-- /.search header__search -->
+        <button class="menu-btn header__menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav class="menu header__menu header__menu--mobile-visible">
+        <ul class="menu__list">
+          <li class="menu__item menu__item--mobile--visible">
+            <form action="#" class="search header__search">
+              <div class="search__input-wrapper">
+                <input type="text" class="search__input" placeholder="Поиск">
+                <button class="search__button">
+                  <svg class="search__button-ico">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </div>
+              <!-- /.search__input-wrapper -->
+            </form>
+            <!-- /.search header__search -->
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Статьи</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Новости</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Курсы</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">HTML</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">CSS</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">JavaScript</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Web Design</a>
+          </li>
+        </ul>
+        <!-- /.menu__list -->
+      </nav>
+      <!-- /.menu header__menu -->
+
+    </div>
+    <!-- /.header__top -->
+  </header>
+  <!-- /.header -->
+
+  <section class="article-bar" style="min-height: 350px; display: flex; align-items: center;">
+    <div class="container article-bar__container">
+      <img src="img/article-bar-1.jpg" alt="Background" class="article-bar__bg">
+      <h2 class="article-bar__title">
+        Ваш комментарий был отправлен на проверку! Ожидайте!
+      </h2>
+      <a href="index.html" class="button read-more article-bar__button">
+        <span class="read-more__label">На главную</span>
+        <svg class="read-more__arrow">
+          <use xlink:href="img/sprite.svg#arrow-right"></use>
+        </svg>
+      </a>
+    </div>
+    <!-- /.container article-bar__container -->
+  </section>
+  <!-- /.article-bar -->
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="subscribe footer__subscribe">
+        <h2 class="subscribe__title">Подпишитесь на нашу рассылку</h2>
+        <form action="send.php" method="POST" class="subscribe__form">
+          <input type="email" class="input subscribe__input" placeholder="Email" name="email" required>
+          <button class="button subscribe__button" name="sub">Подписаться</button>
+        </form>
+        <!-- /.subscribe__form -->
+      </div>
+      <!-- /.subscribe-section -->
+      <div class="footer-grid">
+        <ul class="footer-grid__list footer-grid__list--news">
+          <li class="footer-grid__item">
+            <h2 class="footer-grid__title">Новости</h2>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Обновления</a>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Экспресс</a>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Politics</a>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Solar Eclipse</a>
+          </li>
+          <!-- /.footer-grid__item -->
+        </ul>
+        <!-- /.footer-grid__item -->
+        <ul class="footer-grid__list footer-grid__list--articles">
+          <li class="footer-grid__item">
+            <h2 class="footer-grid__title">Статьи</h2>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">HTML</a>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">CSS</a>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">JavaScript</a>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Web Design</a>
+          </li>
+          <!-- /.footer-grid__item -->
+        </ul>
+        <!-- /.footer-grid__item -->
+        <ul class="footer-grid__list footer-grid__list--video">
+          <li class="footer-grid__item">
+            <h2 class="footer-grid__title">Видеоуроки</h2>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Скринкасты</a>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Уроки</a>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Вебинары</a>
+          </li>
+          <!-- /.footer-grid__item -->
+        </ul>
+        <!-- /.footer-grid__item -->
+        <ul class="footer-grid__list footer-grid__list--course">
+          <li class="footer-grid__item">
+            <h2 class="footer-grid__title">Курсы</h2>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Платные интенсивы</a>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Бесплатные стримы</a>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Мастер-классы</a>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Менторство</a>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Буткемпы</a>
+          </li>
+          <!-- /.footer-grid__item -->
+        </ul>
+        <!-- /.footer-grid__item -->
+        <ul class="footer-grid__list footer-grid__list--info">
+          <li class="footer-grid__item">
+            <h2 class="footer-grid__title">Информация</h2>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Политика данных</a>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Оферта сайта</a>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Реквизиты</a>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Контакты</a>
+          </li>
+          <!-- /.footer-grid__item -->
+        </ul>
+        <!-- /.footer-grid__item -->
+        <ul class="footer-grid__list footer-grid__list--categories">
+          <li class="footer-grid__item">
+            <h2 class="footer-grid__title">Категории</h2>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Популярное</a>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Горячее</a>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Подборки</a>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Мнения</a>
+          </li>
+          <!-- /.footer-grid__item -->
+          <li class="footer-grid__item">
+            <a href="#" class="footer-grid__link">Карьера</a>
+          </li>
+          <!-- /.footer-grid__item -->
+        </ul>
+        <!-- /.footer-grid__item -->
+      </div>
+      <!-- /.footer-grid -->
+
+      <div class="footer-menu">
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item">
+            <a href="../../index.html" class="footer-menu__link">
+              <img src="img/footer-logo.svg" alt="Universal: Logo" class="logo footer__logo">
+            </a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="../article-2/index.html" class="footer-menu__link">Контакты</a>
+          </li>
+          <!-- /.footer-menu__item -->
+          <li class="footer-menu__item">
+            <a href="../article-2/index.html" class="footer-menu__link">Работа у нас</a>
+          </li>
+          <!-- /.footer-menu__item -->
+          <li class="footer-menu__item">
+            <a href="../article-2/index.html" class="footer-menu__link">Реклама</a>
+          </li>
+          <!-- /.footer-menu__item -->
+          <li class="footer-menu__item">
+            <a href="../article-2/index.html" class="footer-menu__link">Партнёрство</a>
+          </li>
+          <!-- /.footer-menu__item -->
+        </ul>
+        <!-- /.footer-menu__list -->
+        <ul class="footer-social">
+          <li class="footer-social__item">
+            <a href="https://www.facebook.com" target="_blank" class="footer-social__link footer-social__link--fb">
+              <svg class="footer-social__link-ico">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com" class="footer-social__link-text">Facebook</a>
+          </li>
+          <li class="footer-social__item">
+            <a href="https://twitter.com/?lang=ru" target="_blank" class="footer-social__link footer-social__link--tw">
+              <svg class="footer-social__link-ico">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+            <a href="https://twitter.com/?lang=ru" class="footer-social__link-text">Twitter</a>
+          </li>
+          <li class="footer-social__item">
+            <a href="https://youtube.com" target="_blank" class="footer-social__link footer-social__link--yt">
+              <svg class="footer-social__link-ico">
+                <use xlink:href="img/sprite.svg#yt"></use>
+              </svg>
+            </a>
+            <a href="https://youtube.com" class="footer-social__link-text">Youtube</a>
+          </li>
+          <li class="footer-social__item">
+            <a href="https://instagram.com" target="_blank" class="footer-social__link footer-social__link--inst">
+              <svg class="footer-social__link-ico">
+                <use xlink:href="img/sprite.svg#inst"></use>
+              </svg>
+            </a>
+            <a href="https://instagram.com" class="footer-social__link-text">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.footer-menu -->
+
+      <div class="footer-bottom">
+        <p class="footer-bottom__info">Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб
+          разработке: статьи, новости, видеоуроки, подборки, ссылки и курсы. Материалы на сайте бесплатны, но при
+          копировании, указывайте ссылку.</p>
+        <span class="footer-bottom__copyright">© 2020 Universal Magazine</span>
+      </div>
+      <!-- /.footer-info -->
+    </div>
+    <!-- /.container footer__container -->
+  </footer>
+  <!-- /.footer -->
+
+  <a href="#top" class="arrow-up" data-action='soft-scroll'>
+    Наверх
+  </a>
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,6 +1,8 @@
 .content-container
   max-width: 952px
   margin: 0 auto
+.container
+  width: 1140px
 
 .text-block
   margin: 0
@@ -38,3 +40,23 @@
     line-height: 125%
     color: $secondary
     margin-right: 8px
+
+.arrow-up
+  text-decoration: none
+  color: $dark
+  padding: 10px 20px
+  position: fixed
+  right: 20px
+  bottom: 20px
+  border: 1px solid $secondary
+  background-color: #f5f5f5
+  border-radius: 10px
+  z-index: 100
+
+.comment-form
+  position: relative
+  #message-error
+    position: absolute
+    bottom: 35px
+    right: 40px
+    color: red

@@ -4,19 +4,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Universal - Из-за ограничений стали недоступны серверы Telegram. К чему это может...</title>
+  <title>Universal - Шаблон статьи №3</title>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
+<style>
+  .clamp {
+    -webkit-box-orient: vertical;
+  }
+
+  .other-articles h2,
+  .material h2 {
+    -webkit-box-orient: vertical;
+  }
+</style>
+
 <body>
-  <header class="header">
+  <header class="header" id="top">
     <div class="header-top">
       <div class="container header-top-container">
-        <a href="#" class="logo-link">
+        <a href="../../index.html" class="logo-link">
           <img src="img/article-logo.svg" alt="Logo: UNIVERSAL" class="logo-img">
         </a>
         <nav class="menu header__menu header__menu--mobile-hidden">
@@ -36,25 +47,25 @@
               <!-- /.search header__search -->
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Статьи</a>
+              <a href="../article-2/index.html" class="menu__link">Статьи</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Новости</a>
+              <a href="../article-2/index.html" class="menu__link">Новости</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Курсы</a>
+              <a href="../article-2/index.html" class="menu__link">Курсы</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">HTML</a>
+              <a href="../article-2/index.html" class="menu__link">HTML</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">CSS</a>
+              <a href="../article-2/index.html" class="menu__link">CSS</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">JavaScript</a>
+              <a href="../article-2/index.html" class="menu__link">JavaScript</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Web Design</a>
+              <a href="../article-2/index.html" class="menu__link">Web Design</a>
             </li>
           </ul>
           <!-- /.menu__list -->
@@ -96,25 +107,25 @@
             <!-- /.search header__search -->
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Статьи</a>
+            <a href="../article-2/index.html" class="menu__link">Статьи</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Новости</a>
+            <a href="../article-2/index.html" class="menu__link">Новости</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Курсы</a>
+            <a href="../article-2/index.html" class="menu__link">Курсы</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">HTML</a>
+            <a href="../article-2/index.html" class="menu__link">HTML</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">CSS</a>
+            <a href="../article-2/index.html" class="menu__link">CSS</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">JavaScript</a>
+            <a href="../article-2/index.html" class="menu__link">JavaScript</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Web Design</a>
+            <a href="../article-2/index.html" class="menu__link">Web Design</a>
           </li>
         </ul>
         <!-- /.menu__list -->
@@ -132,21 +143,21 @@
           </svg>
         </a>
         <div class="content-container header-main__content-container">
-          <span class="tag header-main__tag col-FF4F52">горячее</span>
+          <span class="tag header-main__tag col-4592FF">мнения</span>
           <div class="navigation">
-            <a href="/index.html" class="navigation__elem navigation__on-main">
+            <a href="../../index.html" class="navigation__elem navigation__on-main">
               <svg class="navigation__ico navigation__on-main-ico">
                 <use xlink:href="img/sprite.svg#home"></use>
               </svg>
               <span class="navigation__label navigation__on-main-label">На главную</span>
             </a>
-            <a href="/pages/article-2/index.html" class="navigation__elem navigation__back">
+            <a href="../article-2/index.html" class="navigation__elem navigation__back">
               <svg class="navigation__ico navigation__back-ico">
                 <use xlink:href="img/sprite.svg#arrow-left"></use>
               </svg>
               <span class="navigation__label navigation__back-label">Назад</span>
             </a>
-            <a href="/pages/article-1/index.html" class="navigation__elem navigation__next">
+            <a href="../article-1/index.html" class="navigation__elem navigation__next">
               <span class="navigation__label navigation__next-label">Вперёд</span>
               <svg class="navigation__ico navigation__next-ico">
                 <use xlink:href="img/sprite.svg#arrow-right"></use>
@@ -154,10 +165,10 @@
             </a>
           </div>
           <!-- /.navigation -->
-          <h1 class="header-main__title">Из-за ограничений стали недоступны серверы Telegram. К чему это может...</h1>
+          <h1 class="header-main__title">Шаблон статьи №3</h1>
           <p class="text-block header-main__text-block">
-            Сегодня мы узнали, что серверы Telegram не доступны на территории России. Разобрались, чем это грозит вам,
-            если ваш бизнес зависит от этого мессенджера.
+            Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает неофициально.
+            Разобрались, как работает режим и кому он подходит, а кому нет.
           </p>
           <div class="card-bottom header-main__card-bottom">
             <div class="card-bottom__date">
@@ -194,9 +205,9 @@
 
   <main class="main">
     <div class="container main__container">
-      <section class="main__section">
+      <div class="main__section">
         <div class="content-container main__content-container">
-          <div class="main-aside author-section">
+          <div class="main-aside author author-section">
             <div class="author__card">
               <div class="author__content">
                 <img src="img/avatar.png" alt="" class="author__avatar">
@@ -254,10 +265,10 @@
           <!-- /.main-content -->
         </div>
         <!-- /.content-container main__content-container -->
-      </section>
+      </div>
       <!-- /.main__section -->
 
-      <section class="main__section main__section--slider">
+      <div class="main__section main__section--slider">
         <div class="main-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide main-slider__slide">
@@ -270,12 +281,12 @@
           <button class="slider-arrow slider-arrow--next"></button>
         </div>
         <!-- /.slider -->
-        <div class="main-section__bottom">
-          <span class="main-section__text">
+        <div class="main__section-bottom main-bottom">
+          <span class="main-bottom__text">
             Geostatistics deal with quantitative data analysis, specifically the
             application of statistical methodology
           </span>
-          <a href="#" class="profile main-section__profile">
+          <a href="../article-2/index.html" class="profile main-bottom__profile">
             <img src="img/avatar-2.png" alt="User avatar" class="profile__avatar">
             <div class="profile__text">
               <span class="profile__name">Андрей Вашигаев</span>
@@ -285,10 +296,10 @@
           <!-- /.profile header-content__profile -->
         </div>
         <!-- /.main-section__bottom -->
-      </section>
+      </div>
       <!-- /.section -->
 
-      <section class="main__section">
+      <div class="main__section">
         <div class="content-container main__content-container">
           <div class="main-content">
             <div class="main__section-block">
@@ -323,38 +334,38 @@
           </div>
           <!-- /.main-content -->
           <div class="main-aside">
-            <div class="material-card">
+            <a href="../article-3/index.html" class="material">
               <h2 class="material__tag">Материал по теме</h2>
               <img src="img/aside-1.png" alt="" class="material__img">
-              <a href="#" class="material__title">20+ инструментов для js-разработчика</a>
+              <h2 class="material__title">20+ инструментов для js-разработчика</h2>
               <p class="material__text">Узнайте, какими инструментами вы еще не пользовались, а могли бы. Эти
                 инструменты помогут вам ускорить свою работу или повысить ее качество. Все инструменты собраны в
                 виде...</p>
-              <div class="card-bottom header-main__card-bottom">
-                <a href="#" class="card-bottom__views">
+              <div class="card-bottom material__card-bottom">
+                <div class="card-bottom__views">
                   <svg class="card-bottom__views-ico">
                     <use xlink:href="img/sprite.svg#view"></use>
                   </svg>
                   <span class="card-bottom__views-count">1623</span>
-                </a>
-                <a href="#" class="card-bottom__comments">
+                </div>
+                <div class="card-bottom__comments">
                   <svg class="card-bottom__comments-ico">
                     <use xlink:href="img/sprite.svg#comment"></use>
                   </svg>
                   <span class="card-bottom___comments-count">102</span>
-                </a>
+                </div>
               </div>
               <!-- /.article-card__bottom -->
-            </div>
+            </a>
             <!-- /.material-card -->
           </div>
           <!-- /.main-aside -->
         </div>
         <!-- /.content-container main__content-container -->
-      </section>
+      </div>
       <!-- /.main__section -->
 
-      <section class="main__section main__section--quote">
+      <div class="main__section main__section--quote">
         <div class="content-container main__content-container">
           <div class="main-content">
             <p class="main__section-text">
@@ -366,10 +377,10 @@
           <!-- /.main-content -->
         </div>
         <!-- /.content-container main__content-container -->
-      </section>
+      </div>
       <!-- /.main__section -->
 
-      <section class="main__section">
+      <div class="main__section">
         <div class="content-container main__content-container">
           <div class="main-content">
             <div class="main__section-block">
@@ -394,17 +405,17 @@
           <!-- /.main-content -->
         </div>
         <!-- /.content-container main__content-container -->
-      </section>
+      </div>
       <!-- /.main__section -->
 
       <div class="main-tags">
         <div class="content-container main__content-container">
           <div class="main-content main-tags__container">
-            <a href="#" class="main-tags__tag">Travel</a>
-            <a href="#" class="main-tags__tag">Destinations</a>
-            <a href="#" class="main-tags__tag">Nature</a>
-            <a href="#" class="main-tags__tag">World</a>
-            <a href="#" class="main-tags__tag">Alaska</a>
+            <a href="../article-2/index.html" class="main-tags__tag">Travel</a>
+            <a href="../article-2/index.html" class="main-tags__tag">Destinations</a>
+            <a href="../article-2/index.html" class="main-tags__tag">Nature</a>
+            <a href="../article-2/index.html" class="main-tags__tag">World</a>
+            <a href="../article-2/index.html" class="main-tags__tag">Alaska</a>
           </div>
           <!-- /.main-content -->
         </div>
@@ -416,21 +427,21 @@
         <div class="content-container main__content-container">
           <div class="main-content">
             <h2 class="main-repost__title">Поддержите репостом</h2>
-            <a href="" class="button see-more main-repost__see-more">
+            <a href="#" class="button see-more main-repost__see-more">
               <svg class="see-more__ico">
                 <use xlink:href="img/sprite.svg#like"></use>
               </svg>
               <span class="see-more__label">Like it</span>
               <span class="see-more__count">42</span>
             </a>
-            <a href="" class="button see-more main-repost__see-more">
+            <a href="../article-3/index.html" class="button see-more main-repost__see-more">
               <svg class="see-more__ico">
                 <use xlink:href="img/sprite.svg#fb"></use>
               </svg>
               <span class="see-more__label">Share</span>
               <span class="see-more__count">80</span>
             </a>
-            <a href="" class="button see-more main-repost__see-more">
+            <a href="../article-3/index.html" class="button see-more main-repost__see-more">
               <svg class="see-more__ico">
                 <use xlink:href="img/sprite.svg#twitter"></use>
               </svg>
@@ -450,91 +461,382 @@
 
   <div class="other-articles">
     <div class="container other-articles__container">
-      <div class="other-articles__card">
+      <a href="../article-2/index.html" class="other-articles__card">
         <img src="img/aside-2.png" alt="" class="other-articles__img">
-        <a href="#" class="other-articles__title">Техника работы по помидоркам — это как?
-          айцк</a>
+        <h2 class="other-articles__title">Техника работы по помидоркам — это как?</h2>
         <div class="card-bottom other-articles__card-bottom">
-          <a href="#" class="card-bottom__views">
+          <div class="card-bottom__views">
             <svg class="card-bottom__views-ico">
               <use xlink:href="img/sprite.svg#view"></use>
             </svg>
             <span class="card-bottom__views-count">1904</span>
-          </a>
-          <a href="#" class="card-bottom__comments">
+          </div>
+          <div class="card-bottom__comments">
             <svg class="card-bottom__comments-ico">
               <use xlink:href="img/sprite.svg#comment"></use>
             </svg>
             <span class="card-bottom___comments-count">82</span>
-          </a>
+          </div>
         </div>
         <!-- /.article-card__bottom -->
-      </div>
+      </a>
       <!-- /.material-card -->
-      <div class="other-articles__card">
+      <a href="../article-2/index.html" class="other-articles__card">
         <img src="img/aside-3.png" alt="" class="other-articles__img">
-        <a href="#" class="other-articles__title">Вопросы на собеседовании для джуна</a>
+        <h2 class="other-articles__title">Вопросы на собеседовании для джуна</h2>
         <div class="card-bottom other-articles__card-bottom">
-          <a href="#" class="card-bottom__views">
+          <div class="card-bottom__views">
             <svg class="card-bottom__views-ico">
               <use xlink:href="img/sprite.svg#view"></use>
             </svg>
             <span class="card-bottom__views-count">1904</span>
-          </a>
-          <a href="#" class="card-bottom__comments">
+          </div>
+          <div class="card-bottom__comments">
             <svg class="card-bottom__comments-ico">
               <use xlink:href="img/sprite.svg#comment"></use>
             </svg>
             <span class="card-bottom___comments-count">82</span>
-          </a>
+          </div>
         </div>
         <!-- /.article-card__bottom -->
-      </div>
+      </a>
       <!-- /.material-card -->
-      <div class="other-articles__card">
+      <a href="../article-2/index.html" class="other-articles__card">
         <img src="img/aside-4.png" alt="" class="other-articles__img">
-        <a href="#" class="other-articles__title">Список стран, куда можно улететь</a>
+        <h2 class="other-articles__title">Список стран, куда можно улететь</h2>
         <div class="card-bottom other-articles__card-bottom">
-          <a href="#" class="card-bottom__views">
+          <div class="card-bottom__views">
             <svg class="card-bottom__views-ico">
               <use xlink:href="img/sprite.svg#view"></use>
             </svg>
             <span class="card-bottom__views-count">1904</span>
-          </a>
-          <a href="#" class="card-bottom__comments">
+          </div>
+          <div class="card-bottom__comments">
             <svg class="card-bottom__comments-ico">
               <use xlink:href="img/sprite.svg#comment"></use>
             </svg>
             <span class="card-bottom___comments-count">82</span>
-          </a>
+          </div>
         </div>
         <!-- /.article-card__bottom -->
-      </div>
+      </a>
       <!-- /.material-card -->
-      <div class="other-articles__card">
+      <a href="../article-2/index.html" class="other-articles__card">
         <img src="img/aside-5.png" alt="" class="other-articles__img">
-        <a href="#" class="other-articles__title">В вашем портфолио могут быть фейковые работы</a>
+        <h2 class="other-articles__title">В вашем портфолио могут быть фейковые работы</h2>
         <div class="card-bottom other-articles__card-bottom">
-          <a href="#" class="card-bottom__views">
+          <div class="card-bottom__views">
             <svg class="card-bottom__views-ico">
               <use xlink:href="img/sprite.svg#view"></use>
             </svg>
             <span class="card-bottom__views-count">1904</span>
-          </a>
-          <a href="#" class="card-bottom__comments">
+          </div>
+          <div class="card-bottom__comments">
             <svg class="card-bottom__comments-ico">
               <use xlink:href="img/sprite.svg#comment"></use>
             </svg>
             <span class="card-bottom___comments-count">82</span>
-          </a>
+          </div>
         </div>
         <!-- /.article-card__bottom -->
-      </div>
+      </a>
       <!-- /.material-card -->
     </div>
     <!-- /.container other-articles__container -->
   </div>
   <!-- /.other-articles -->
+
+  <section class="comment">
+    <div class="container comment__container">
+      <div class="content-container">
+        <div class="comments-wrapper">
+          <div class="comment__top">
+            <div class="comment__header">
+              <h2 class="comment__title">Комментарии</h2>
+              <span class="comment__count">19</span>
+            </div>
+            <!-- /.comment__header -->
+            <a href="#comment-form" class="button add-button comment__add-button" data-action="soft-scroll">
+              <svg class="add-button__ico">
+                <use xlink:href="img/sprite.svg#pencil"></use>
+              </svg>
+              <span class="add-button__label">Добавить комментарий</span>
+            </a>
+          </div>
+          <!-- /.comments__top -->
+
+          <div class="comment__list">
+            <div class="comment__item">
+              <img src="img/avatar-2.png" alt="" class="comment__avatar">
+              <div class="comment__body">
+                <span class="comment__name">Михаил Степашин</span>
+                <span class="comment__date">17 июля, 18:38</span>
+                <p class="comment__text">
+                  Хочу заметить, что автор этой статьи не написал, что не все могут получить статус самозанятого. Этот
+                  режим еще не ввели во всех регионах. Но если в вашем регионе есть, то поздравляю.
+                </p>
+                <div class="card-bottom">
+                  <a href="#comment-form" class="card-bottom__comments" data-action="soft-scroll">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#comment"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count">Ответить</span>
+                  </a>
+                  <a href="#" class="card-bottom__comments">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#cm_like"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count card-bottom___comments-count--likes">+10</span>
+                  </a>
+                  <a href="#" class="card-bottom__comments">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#cm_dislike"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count"></span>
+                  </a>
+                </div>
+                <!-- /.card-bottom -->
+              </div>
+              <!-- /.comment__body -->
+            </div>
+            <!-- /.comment__item -->
+
+            <div class="comment__item comment__item--answer">
+              <img src="img/avatar.png" alt="" class="comment__avatar">
+              <div class="comment__body">
+                <span class="comment__name">Мира Стахова</span>
+                <span class="comment__date">17 июля, 18:38</span>
+                <p class="comment__text">
+                  Да, спасибо за замечание. Добавлю список регионов, где этот режим уже действует и буду периодически
+                  обновлять его. Потому что обещали ввести этот режим везде.
+                </p>
+                <div class="card-bottom">
+                  <a href="#comment-form" class="card-bottom__comments" data-action="soft-scroll">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#comment"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count">Ответить</span>
+                  </a>
+                  <a href="#" class="card-bottom__comments">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#cm_like"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count card-bottom___comments-count--likes">0</span>
+                  </a>
+                  <a href="#" class="card-bottom__comments">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#cm_dislike"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count"></span>
+                  </a>
+                </div>
+                <!-- /.card-bottom -->
+              </div>
+              <!-- /.comment__body -->
+            </div>
+            <!-- /.comment__item -->
+
+            <div class="comment__item">
+              <img src="img/avatar-3.png" alt="" class="comment__avatar">
+              <div class="comment__body">
+                <span class="comment__name">Анжела Иванова</span>
+                <span class="comment__date">17 июля, 18:38</span>
+                <p class="comment__text">
+                  Если честно, кажется, что этот налоговый режим ввели, чтобы собрать больше денег с народа. Я, конечно,
+                  понимаю, что бюджеты надо пополнять, но не лучше ли обложить налогом богатых?
+                </p>
+                <div class="card-bottom">
+                  <a href="#comment-form" class="card-bottom__comments" data-action="soft-scroll">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#comment"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count">Ответить</span>
+                  </a>
+                  <a href="#" class="card-bottom__comments">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#cm_like"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count card-bottom___comments-count--likes">-3</span>
+                  </a>
+                  <a href="#" class="card-bottom__comments">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#cm_dislike"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count"></span>
+                  </a>
+                </div>
+                <!-- /.card-bottom -->
+              </div>
+              <!-- /.comment__body -->
+            </div>
+            <!-- /.comment__item -->
+
+            <div class="comment__item">
+              <img src="img/avatar-4.png" alt="" class="comment__avatar">
+              <div class="comment__body">
+                <span class="comment__name">Крис Яков</span>
+                <span class="comment__date">17 июля, 18:38</span>
+                <p class="comment__text">
+                  Такой режим уже давно работает в продвинутых странах, почему его ввели только сейчас, непонятно.
+                  Хотелось бы, чтобы это все заработало в моем регионе, буду в числе первых!
+                </p>
+                <div class="card-bottom">
+                  <a href="#comment-form" class="card-bottom__comments" data-action="soft-scroll">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#comment"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count">Ответить</span>
+                  </a>
+                  <a href="#" class="card-bottom__comments">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#cm_like"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count card-bottom___comments-count--likes">0</span>
+                  </a>
+                  <a href="#" class="card-bottom__comments">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#cm_dislike"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count"></span>
+                  </a>
+                </div>
+                <!-- /.card-bottom -->
+              </div>
+              <!-- /.comment__body -->
+            </div>
+            <!-- /.comment__item -->
+            <div class="comment__item comment__item--hidden" id='scroll-here'>
+              <img src="img/avatar-4.png" alt="" class="comment__avatar">
+              <div class="comment__body">
+                <span class="comment__name">Крис Яков</span>
+                <span class="comment__date">17 июля, 18:38</span>
+                <p class="comment__text">
+                  Такой режим уже давно работает в продвинутых странах, почему его ввели только сейчас, непонятно.
+                  Хотелось бы, чтобы это все заработало в моем регионе, буду в числе первых!
+                </p>
+                <div class="card-bottom">
+                  <a href="#comment-form" class="card-bottom__comments" data-action="soft-scroll">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#comment"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count">Ответить</span>
+                  </a>
+                  <a href="#" class="card-bottom__comments">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#cm_like"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count card-bottom___comments-count--likes">0</span>
+                  </a>
+                  <a href="#" class="card-bottom__comments">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#cm_dislike"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count"></span>
+                  </a>
+                </div>
+                <!-- /.card-bottom -->
+              </div>
+              <!-- /.comment__body -->
+            </div>
+            <!-- /.comment__item -->
+            <div class="comment__item comment__item--hidden">
+              <img src="img/avatar-4.png" alt="" class="comment__avatar">
+              <div class="comment__body">
+                <span class="comment__name">Крис Яков</span>
+                <span class="comment__date">17 июля, 18:38</span>
+                <p class="comment__text">
+                  Такой режим уже давно работает в продвинутых странах, почему его ввели только сейчас, непонятно.
+                  Хотелось бы, чтобы это все заработало в моем регионе, буду в числе первых!
+                </p>
+                <div class="card-bottom">
+                  <a href="#comment-form" class="card-bottom__comments data-action=" soft-scroll"">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#comment"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count">Ответить</span>
+                  </a>
+                  <a href="#" class="card-bottom__comments">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#cm_like"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count card-bottom___comments-count--likes">0</span>
+                  </a>
+                  <a href="#" class="card-bottom__comments">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#cm_dislike"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count"></span>
+                  </a>
+                </div>
+                <!-- /.card-bottom -->
+              </div>
+              <!-- /.comment__body -->
+            </div>
+            <!-- /.comment__item -->
+            <div class="comment__item comment__item--hidden">
+              <img src="img/avatar-4.png" alt="" class="comment__avatar">
+              <div class="comment__body">
+                <span class="comment__name">Крис Яков</span>
+                <span class="comment__date">17 июля, 18:38</span>
+                <p class="comment__text">
+                  Такой режим уже давно работает в продвинутых странах, почему его ввели только сейчас, непонятно.
+                  Хотелось бы, чтобы это все заработало в моем регионе, буду в числе первых!
+                </p>
+                <div class="card-bottom">
+                  <a href="#comment-form" class="card-bottom__comments" data-action="soft-scroll">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#comment"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count">Ответить</span>
+                  </a>
+                  <a href="#" class="card-bottom__comments">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#cm_like"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count card-bottom___comments-count--likes">0</span>
+                  </a>
+                  <a href="#" class="card-bottom__comments">
+                    <svg class="card-bottom__comments-ico">
+                      <use xlink:href="img/sprite.svg#cm_dislike"></use>
+                    </svg>
+                    <span class="card-bottom___comments-count"></span>
+                  </a>
+                </div>
+                <!-- /.card-bottom -->
+              </div>
+              <!-- /.comment__body -->
+            </div>
+            <!-- /.comment__item -->
+          </div>
+          <!-- /.comment__list -->
+
+          <a href="#scroll-here" class="button add-button comment__load-more" data-action='soft-scroll'>
+            <svg class="add-button__ico">
+              <use xlink:href="img/sprite.svg#loading"></use>
+            </svg>
+            <span class="add-button__label">загрузить ещё</span>
+          </a>
+
+          <form action="send.php" method="POST" class="comment-form" id="comment-form">
+            <h2 class="comment-form__title">Что вы думаете на этот счет? </h2>
+            <img src="img/avatar-5.png" alt="" class="comment__avatar comment-form__avatar">
+            <textarea class="comment-form__text" name='message' required></textarea>
+            <button class="button read-more comment-form__button" name='message-send'>
+              <span class="read-more__label">Отправить</span>
+              <svg class="read-more__arrow">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </form>
+          <!-- /.comment__form -->
+
+        </div>
+      </div>
+      <!-- /.main-content -->
+    </div>
+    <!-- /.container comment__container -->
+  </section>
+  <!-- /.comment__section -->
 
   <footer class="footer">
     <div class="container footer__container">
@@ -696,60 +998,60 @@
       <div class="footer-menu">
         <ul class="footer-menu__list">
           <li class="footer-menu__item">
-            <a href="./index.html" class="footer-menu__link">
+            <a href="../../index.html" class="footer-menu__link">
               <img src="img/footer-logo.svg" alt="Universal: Logo" class="logo footer__logo">
             </a>
           </li>
           <li class="footer-menu__item">
-            <a href="#" class="footer-menu__link">Контакты</a>
+            <a href="../article-2/index.html" class="footer-menu__link">Контакты</a>
           </li>
           <!-- /.footer-menu__item -->
           <li class="footer-menu__item">
-            <a href="#" class="footer-menu__link">Работа у нас</a>
+            <a href="../article-2/index.html" class="footer-menu__link">Работа у нас</a>
           </li>
           <!-- /.footer-menu__item -->
           <li class="footer-menu__item">
-            <a href="#" class="footer-menu__link">Реклама</a>
+            <a href="../article-2/index.html" class="footer-menu__link">Реклама</a>
           </li>
           <!-- /.footer-menu__item -->
           <li class="footer-menu__item">
-            <a href="#" class="footer-menu__link">Партнёрство</a>
+            <a href="../article-2/index.html" class="footer-menu__link">Партнёрство</a>
           </li>
           <!-- /.footer-menu__item -->
         </ul>
         <!-- /.footer-menu__list -->
         <ul class="footer-social">
           <li class="footer-social__item">
-            <a href="#" class="footer-social__link footer-social__link--fb">
+            <a href="https://www.facebook.com" target="_blank" class="footer-social__link footer-social__link--fb">
               <svg class="footer-social__link-ico">
                 <use xlink:href="img/sprite.svg#fb"></use>
               </svg>
-              <a href="#" class="footer-social__link-text">Facebook</a>
             </a>
+            <a href="https://www.facebook.com" class="footer-social__link-text">Facebook</a>
           </li>
           <li class="footer-social__item">
-            <a href="#" class="footer-social__link footer-social__link--tw">
+            <a href="https://twitter.com/?lang=ru" target="_blank" class="footer-social__link footer-social__link--tw">
               <svg class="footer-social__link-ico">
                 <use xlink:href="img/sprite.svg#twitter"></use>
               </svg>
-              <a href="#" class="footer-social__link-text">Twitter</a>
             </a>
+            <a href="https://twitter.com/?lang=ru" class="footer-social__link-text">Twitter</a>
           </li>
           <li class="footer-social__item">
-            <a href="#" class="footer-social__link footer-social__link--yt">
+            <a href="https://youtube.com" target="_blank" class="footer-social__link footer-social__link--yt">
               <svg class="footer-social__link-ico">
                 <use xlink:href="img/sprite.svg#yt"></use>
               </svg>
-              <a href="#" class="footer-social__link-text">Youtube</a>
             </a>
+            <a href="https://youtube.com" class="footer-social__link-text">Youtube</a>
           </li>
           <li class="footer-social__item">
-            <a href="#" class="footer-social__link footer-social__link--inst">
+            <a href="https://instagram.com" target="_blank" class="footer-social__link footer-social__link--inst">
               <svg class="footer-social__link-ico">
                 <use xlink:href="img/sprite.svg#inst"></use>
               </svg>
-              <a href="#" class="footer-social__link-text">Instagram</a>
             </a>
+            <a href="https://instagram.com" class="footer-social__link-text">Instagram</a>
           </li>
         </ul>
       </div>
@@ -766,6 +1068,11 @@
     <!-- /.container footer__container -->
   </footer>
   <!-- /.footer -->
+
+
+  <a href="#top" class="arrow-up" data-action='soft-scroll'>
+    Наверх
+  </a>
 
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.min.js"></script>

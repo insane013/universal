@@ -11,13 +11,27 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
+<style>
+  .clamp {
+    -webkit-box-orient: vertical;
+  }
+
+  .article-card p,
+  .article-list p,
+  .article-card h2,
+  .article-list h2,
+  .header-bottom__item a {
+    -webkit-box-orient: vertical;
+  }
+</style>
+
 <body>
 
-  <header class="header">
+  <header class="header" id="top">
     <h1 style="display: none;">Hidden h1 title</h1>
     <div class="header-top">
       <div class="container header-top-container">
-        <a href="#" class="logo-link">
+        <a href="index.html" class="logo-link">
           <img src="img/logo.svg" alt="Logo: UNIVERSAL" class="logo-img">
         </a>
         <nav class="menu header__menu header__menu--mobile-hidden">
@@ -37,25 +51,25 @@
               <!-- /.search header__search -->
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Статьи</a>
+              <a href="pages/article-1/index.html" class="menu__link">Статьи</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Новости</a>
+              <a href="pages/article-1/index.html" class="menu__link">Новости</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Курсы</a>
+              <a href="pages/article-1/index.html" class="menu__link">Курсы</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">HTML</a>
+              <a href="pages/article-1/index.html" class="menu__link">HTML</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">CSS</a>
+              <a href="pages/article-1/index.html" class="menu__link">CSS</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">JavaScript</a>
+              <a href="pages/article-1/index.html" class="menu__link">JavaScript</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Web Design</a>
+              <a href="pages/article-1/index.html" class="menu__link">Web Design</a>
             </li>
           </ul>
           <!-- /.menu__list -->
@@ -97,25 +111,25 @@
             <!-- /.search header__search -->
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Статьи</a>
+            <a href="pages/article-1/index.html" class="menu__link">Статьи</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Новости</a>
+            <a href="pages/article-1/index.html" class="menu__link">Новости</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Курсы</a>
+            <a href="pages/article-1/index.html" class="menu__link">Курсы</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">HTML</a>
+            <a href="pages/article-1/index.html" class="menu__link">HTML</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">CSS</a>
+            <a href="pages/article-1/index.html" class="menu__link">CSS</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">JavaScript</a>
+            <a href="pages/article-1/index.html" class="menu__link">JavaScript</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Web Design</a>
+            <a href="pages/article-1/index.html" class="menu__link">Web Design</a>
           </li>
         </ul>
         <!-- /.menu__list -->
@@ -160,7 +174,7 @@
           <!-- /.content__tabs -->
           <div class="header-content header-main__viewport" id="content-1">
             <img class="header-content__bg" src="img/header-content-1.jpg" alt="Content-1">
-            <a href="#" class="profile header-content__profile">
+            <a href="pages/article-1/index.html" class="profile header-content__profile">
               <img src="img/avatar.jpg" alt="User avatar" class="profile__avatar">
               <div class="profile__text">
                 <span class="profile__name">Василий Пупкин</span>
@@ -170,8 +184,9 @@
             <!-- /.profile header-content__profile -->
             <div class="header-content__text-block">
               <span class="tag header-content__tag">CSS</span>
-              <a href="#" class="header-content__title">Как использовать CSS float после того, как вышел Flexbox</a>
-              <a href="#" class="button read-more header-content__button">
+              <a href="pages/article-1/index.html" class="header-content__title">Как использовать CSS float после того,
+                как вышел Flexbox</a>
+              <a href="pages/article-1/index.html" class="button read-more header-content__button">
                 <span class="read-more__label">Читать далее</span>
                 <svg class="read-more__arrow">
                   <use xlink:href="img/sprite.svg#arrow-right"></use>
@@ -182,7 +197,7 @@
           <!-- /.content-1 -->
           <div class="header-content header-main__viewport" id="content-2">
             <img class="header-content__bg" src="img/header-content-1.jpg" alt="Content-1">
-            <a href="#" class="profile header-content__profile">
+            <a href="pages/article-1/index.html" class="profile header-content__profile">
               <img src="img/avatar.jpg" alt="User avatar" class="profile__avatar">
               <div class="profile__text">
                 <span class="profile__name">Давид Гуров</span>
@@ -192,8 +207,8 @@
             <!-- /.profile header-content__profile -->
             <div class="header-content__text-block">
               <span class="tag header-content__tag">Javascript</span>
-              <a href="#" class="header-content__title">Расширение Chrome защищает от атак</a>
-              <a href="#" class="button read-more header-content__button">
+              <a href="pages/article-1/index.html" class="header-content__title">Расширение Chrome защищает от атак</a>
+              <a href="pages/article-1/index.html" class="button read-more header-content__button">
                 <span class="read-more__label">Читать далее</span>
                 <svg class="read-more__arrow">
                   <use xlink:href="img/sprite.svg#arrow-right"></use>
@@ -204,7 +219,7 @@
           <!-- /.content-2 -->
           <div class="header-content header-main__viewport" id="content-3">
             <img class="header-content__bg" src="img/header-content-1.jpg" alt="Content-1">
-            <a href="#" class="profile header-content__profile">
+            <a href="pages/article-1/index.html" class="profile header-content__profile">
               <img src="img/avatar.jpg" alt="User avatar" class="profile__avatar">
               <div class="profile__text">
                 <span class="profile__name">Иван Иваныч</span>
@@ -214,8 +229,9 @@
             <!-- /.profile header-content__profile -->
             <div class="header-content__text-block">
               <span class="tag header-content__tag">HTML</span>
-              <a href="#" class="header-content__title">Правильно вставляем картинку на сайт для Retina дисплея</a>
-              <a href="#" class="button read-more header-content__button">
+              <a href="pages/article-1/index.html" class="header-content__title">Правильно вставляем картинку на сайт
+                для Retina дисплея</a>
+              <a href="pages/article-1/index.html" class="button read-more header-content__button">
                 <span class="read-more__label">Читать далее</span>
                 <svg class="read-more__arrow">
                   <use xlink:href="img/sprite.svg#arrow-right"></use>
@@ -226,7 +242,7 @@
           <!-- /.content-3 -->
           <div class="header-content header-main__viewport" id="content-4">
             <img class="header-content__bg" src="img/header-content-1.jpg" alt="Content-1">
-            <a href="#" class="profile header-content__profile">
+            <a href="pages/article-1/index.html" class="profile header-content__profile">
               <img src="img/avatar.jpg" alt="User avatar" class="profile__avatar">
               <div class="profile__text">
                 <span class="profile__name">Designer228</span>
@@ -236,8 +252,8 @@
             <!-- /.profile header-content__profile -->
             <div class="header-content__text-block">
               <span class="tag header-content__tag">Web design</span>
-              <a href="#" class="header-content__title">Топ-10 плагинов для Figma. </a>
-              <a href="#" class="button read-more header-content__button">
+              <a href="pages/article-1/index.html" class="header-content__title">Топ-10 плагинов для Figma. </a>
+              <a href="pages/article-1/index.html" class="button read-more header-content__button">
                 <span class="read-more__label">Читать далее</span>
                 <svg class="read-more__arrow">
                   <use xlink:href="img/sprite.svg#arrow-right"></use>
@@ -248,7 +264,7 @@
           <!-- /.content-4 -->
           <div class="header-content header-main__viewport" id="content-5">
             <img class="header-content__bg" src="img/header-content-1.jpg" alt="Content-1">
-            <a href="#" class="profile header-content__profile">
+            <a href="pages/article-1/index.html" class="profile header-content__profile">
               <img src="img/avatar.jpg" alt="User avatar" class="profile__avatar">
               <div class="profile__text">
                 <span class="profile__name">Василий Пупкин</span>
@@ -258,8 +274,9 @@
             <!-- /.profile header-content__profile -->
             <div class="header-content__text-block">
               <span class="tag header-content__text-tag">CSS</span>
-              <a href="#" class="header-content__title">Возможности CSS Grid Layout , которые уже можно применять</a>
-              <a href="#" class="button read-more header-content__button">
+              <a href="pages/article-1/index.html" class="header-content__title">Возможности CSS Grid Layout , которые
+                уже можно применять</a>
+              <a href="pages/article-1/index.html" class="button read-more header-content__button">
                 <span class="read-more__label">Читать далее</span>
                 <svg class="read-more__arrow">
                   <use xlink:href="img/sprite.svg#arrow-right"></use>
@@ -275,25 +292,25 @@
         <div class="container header-bottom-container">
           <ul class="header-bottom__list">
             <li class="header-bottom__item">
-              <a href="#" class="header-bottom__text">25 способов настроить слайдер</a>
+              <a href="pages/article-1/index.html" class="header-bottom__text">25 способов настроить слайдер</a>
               <img src="img/header-bottom-item-1.jpg" alt="Картинка: 25 способов настроить слайдер"
                 class="header-bottom__img">
             </li>
             <!-- /.header-bottm__item -->
             <li class="header-bottom__item">
-              <a href="#" class="header-bottom__text">Главные фишки фрилансера</a>
+              <a href="pages/article-1/index.html" class="header-bottom__text">Главные фишки фрилансера</a>
               <img src="img/header-bottom-item-2.jpg" alt="Картинка: Главные фишки фрилансера"
                 class="header-bottom__img">
             </li>
             <!-- /.header-bottm__item -->
             <li class="header-bottom__item">
-              <a href="#" class="header-bottom__text">Техника управлеия временем “Помодоро”</a>
+              <a href="pages/article-1/index.html" class="header-bottom__text">Техника управлеия временем “Помодоро”</a>
               <img src="img/header-bottom-item-3.jpg" alt="Картинка: Техника управлеия  временем “Помодоро”"
                 class="header-bottom__img">
             </li>
             <!-- /.header-bottm__item -->
             <li class="header-bottom__item">
-              <a href="#" class="header-bottom__text">Что нужно знать о Git и&nbsp;GitHub </a>
+              <a href="pages/article-1/index.html" class="header-bottom__text">Что нужно знать о Git и&nbsp;GitHub </a>
               <img src="img/header-bottom-item-4.jpg" alt="Картинка: Что нужно знать о Git и GitHub "
                 class="header-bottom__img">
             </li>
@@ -315,7 +332,7 @@
       <div class="article-card card-2-2 article-card--type-1">
         <div class="article-card__info article-card__info--type-1">
           <span class="tag article-card__tag color-6E99AE">Статьи</span>
-          <a href="#" class="article-card__article-link">
+          <a href="pages/article-1/index.html" class="article-card__article-link">
             <h2 class="article-card__title article-card__title--type-1">Вам предложили работу мечты, но вы не
               можете...
             </h2>
@@ -328,11 +345,12 @@
         <!-- /.article-card__info -->
         <img src="img/article-card-1.png" alt="car" class="article-card__bg article-card__bg--type-1">
         <div class="card-bottom article-card__bottom">
-          <a href="#" class="article-card__author">
+          <a href="pages/article-1/index.html" class="article-card__author">
             <img src="img/article-avatar.jpg" alt="Аватар: Инна Квашова" class="article-card__author-avatar">
             <span class="article-card__author-name">Инна Квашова:</span>
           </a>
-          <a href="#" class="article-card__quote">Каждый разработчик мечтает переехать в большой город и грести там
+          <a href="pages/article-1/index.html" class="article-card__quote">Каждый разработчик мечтает переехать в
+            большой город и грести там
             боьшие бабки
           </a>
           <a href="#" class="card-bottom__comments">
@@ -351,7 +369,7 @@
         <span class="hot">Популярное</span>
         <div class="article-card__info article-card__info--type-2">
           <div class="tag article-card__tag">Web design</div>
-          <a href="#" class="article-card__article-link">
+          <a href="pages/article-1/index.html" class="article-card__article-link">
             <h2 class="article-card__title article-card__title--type-2">
               Где взять
               реальные проекты для
@@ -361,12 +379,13 @@
         </div>
         <!-- /.article-card__info -->
         <div class="card-bottom article-card__bottom article-card__bottom--type-2">
-          <a href="#" class="article-card__author-link">
+          <a href="pages/article-1/index.html" class="article-card__author-link">
             <img src="img/article-avatar.jpg" alt="Аватар: Инна Квашова"
               class="article-card__author-avatar article-card__author-avatar--type-2">
           </a>
           <div class="article-card__bottom-info">
-            <a href="#" class="article-card__author-name article-card__author-name--type-2">Сара Женникова</a>
+            <a href="pages/article-1/index.html"
+              class="article-card__author-name article-card__author-name--type-2">Сара Женникова</a>
             <div class="card-bottom__date article-card__date">25 сентября</div>
             <a href="#" class="card-bottom__comments">
               <svg class="card-bottom__comments-ico">
@@ -394,7 +413,7 @@
           <h2 class="article-card__file-name">Чек-лист сдачи верстки вашему заказчику</h2>
           <span class="article-card__file-info">PDF, 125 Мб</span>
         </div>
-        <a href="#" class="article-card__download">
+        <a href="pages/article-1/index.html" class="article-card__download">
           <svg class="article-card__download-ico">
             <use xlink:href="img/sprite.svg#download"></use>
           </svg>
@@ -406,19 +425,19 @@
       <div class="article-card card-1-2 article-card--tags">
         <h2 class="article-card__title article-card__title--tags">Тэги</h2>
         <div class="article-card__tag-container">
-          <a href="#" class="article-card__type-tag">Forest</a>
-          <a href="#" class="article-card__type-tag">Hover tag</a>
-          <a href="#" class="article-card__type-tag">Nature</a>
-          <a href="#" class="article-card__type-tag">Recreation</a>
-          <a href="#" class="article-card__type-tag">Tent</a>
-          <a href="#" class="article-card__type-tag">Fresh air</a>
-          <a href="#" class="article-card__type-tag">Summer</a>
-          <a href="#" class="article-card__type-tag">Mountains</a>
-          <a href="#" class="article-card__type-tag">Wood</a>
-          <a href="#" class="article-card__type-tag">Map</a>
-          <a href="#" class="article-card__type-tag">Sun</a>
-          <a href="#" class="article-card__type-tag">Wild animals</a>
-          <a href="#" class="article-card__type-tag">Night</a>
+          <a href="pages/article-1/index.html" class="article-card__type-tag">Forest</a>
+          <a href="pages/article-1/index.html" class="article-card__type-tag">Hover tag</a>
+          <a href="pages/article-1/index.html" class="article-card__type-tag">Nature</a>
+          <a href="pages/article-1/index.html" class="article-card__type-tag">Recreation</a>
+          <a href="pages/article-1/index.html" class="article-card__type-tag">Tent</a>
+          <a href="pages/article-1/index.html" class="article-card__type-tag">Fresh air</a>
+          <a href="pages/article-1/index.html" class="article-card__type-tag">Summer</a>
+          <a href="pages/article-1/index.html" class="article-card__type-tag">Mountains</a>
+          <a href="pages/article-1/index.html" class="article-card__type-tag">Wood</a>
+          <a href="pages/article-1/index.html" class="article-card__type-tag">Map</a>
+          <a href="pages/article-1/index.html" class="article-card__type-tag">Sun</a>
+          <a href="pages/article-1/index.html" class="article-card__type-tag">Wild animals</a>
+          <a href="pages/article-1/index.html" class="article-card__type-tag">Night</a>
         </div>
         <!-- /.article-card__tag-container -->
       </div>
@@ -427,14 +446,14 @@
       <div class="article-card card-1-2 article-card--type-3">
         <img src="img/article-card-3.jpg" alt="Картинка: 20+ инструментов для js-разработчика"
           class="article-card__bg article-card__bg--type-3">
-        <a href="#" class="article-card__article-link">
+        <a href="pages/article-1/index.html" class="article-card__article-link">
           <h2 class="article-card__title article-card__title--type-3">20+ инструментов<br>для js-разработчика</h2>
         </a>
       </div>
       <!-- /.article-card card-1-2 article-card-type-3 -->
 
       <div class="article-card article-card--type-4">
-        <a href="#" class="article-card__article-link">
+        <a href="pages/article-1/index.html" class="article-card__article-link">
           <h2 class="article-card__title article-card__title--type-4">Удачные референсы
           </h2>
           <p class="article-card__text article-card__text--type-4">Как выбрать подходящие исходники, если вы
@@ -446,7 +465,7 @@
       <!-- /.article-card -->
 
       <div class="article-card article-card--type-4">
-        <a href="#" class="article-card__article-link">
+        <a href="pages/article-1/index.html" class="article-card__article-link">
           <h2 class="article-card__title article-card__title--type-4">Заказчики — мудаки?</h2>
           <p class="article-card__text article-card__text--type-4">Как защититься от бесконечных правок на
             этапе
@@ -458,7 +477,7 @@
       <!-- /.article-card -->
 
       <div class="article-card article-card--type-4">
-        <a href="#" class="article-card__article-link">
+        <a href="pages/article-1/index.html" class="article-card__article-link">
           <h2 class="article-card__title article-card__title--type-4">Работа без стресса — это...</h2>
           <p class="article-card__text article-card__text--type-4">Обустройте свое рабочее место так, чтобы не
             испытывать
@@ -469,7 +488,7 @@
       <!-- /.article-card -->
 
       <div class="article-card article-card--type-4">
-        <a href="#" class="article-card__article-link">
+        <a href="pages/article-1/index.html" class="article-card__article-link">
           <h2 class="article-card__title article-card__title--type-4">Бесплатные методы...</h2>
           <p class="article-card__text article-card__text--type-4">Как не платить за софт, если у вас есть
             студенческий
@@ -483,7 +502,7 @@
         <div class="article-card__title article-card__title--type-5">Наши соцсети</div>
         <ul class="article-card__social">
           <li class="article-card__item">
-            <a href="#" class="article-card__link article-card__link--fb">
+            <a href="https://www.facebook.com" target="_blank" class="article-card__link article-card__link--fb">
               <svg class="article-card__link-ico">
                 <use xlink:href="img/sprite.svg#fb"></use>
               </svg>
@@ -491,7 +510,7 @@
             <a href="#" class="article-card__link-text">Facebook</a>
           </li>
           <li class="article-card__item">
-            <a href="#" class="article-card__link article-card__link--tw">
+            <a href="https://twiiter.com/?lang=ru" target="_blank" class="article-card__link article-card__link--tw">
               <svg class="article-card__link-ico">
                 <use xlink:href="img/sprite.svg#twitter"></use>
               </svg>
@@ -499,7 +518,7 @@
             <a href="#" class="article-card__link-text">Twitter</a>
           </li>
           <li class="article-card__item">
-            <a href="#" class="article-card__link article-card__link--yt">
+            <a href="https://youtube.com" target="_blank" class="article-card__link article-card__link--yt">
               <svg class="article-card__link-ico">
                 <use xlink:href="img/sprite.svg#yt"></use>
               </svg>
@@ -519,7 +538,7 @@
       <h2 class="article-bar__title">
         Расследование недели: сколько зарабатывает веб разработчик в Москве
       </h2>
-      <a href="#" class="button read-more article-bar__button">
+      <a href="pages/article-1/index.html" class="button read-more article-bar__button">
         <span class="read-more__label">Читать статью</span>
         <svg class="read-more__arrow">
           <use xlink:href="img/sprite.svg#arrow-right"></use>
@@ -650,7 +669,7 @@
         </div>
         <!-- /.article-list__item -->
         <div class="article-card article-list__item">
-          <a href="#" class="article-list__item-img-link">
+          <a href="pages/article-1/index.html" class="article-list__item-img-link">
             <img class="article-list__item-img" src="img/article-list-item-4.jpg"
               alt="Картинка: В вашем портфолио могут быть фейковые проекты, если вы сделали...">
           </a>
@@ -661,7 +680,7 @@
                 <use xlink:href="img/sprite.svg#bookmark"></use>
               </svg>
             </a>
-            <a href="#" class="article-card__article-link">
+            <a href="pages/article-1/index.html" class="article-card__article-link">
               <h2 class="article-list__item-title">В вашем портфолио могут быть фейковые проекты, если вы сделали...
               </h2>
               <p class="article-list__item-text">Один из читателей предположил, что если в портфолио положить
@@ -689,7 +708,7 @@
         </div>
         <!-- /.article-list__item -->
         <div class="article-card article-list__item">
-          <a href="#" class="article-list__item-img-link">
+          <a href="pages/article-1/index.html" class="article-list__item-img-link">
             <img class="article-list__item-img" src="img/article-list-item-5.jpg"
               alt="Картинка: Список стран, куда можно улететь">
           </a>
@@ -700,7 +719,7 @@
                 <use xlink:href="img/sprite.svg#bookmark"></use>
               </svg>
             </a>
-            <a href="#" class="article-card__article-link">
+            <a href="pages/article-1/index.html" class="article-card__article-link">
               <h2 class="article-list__item-title">Список стран, куда можно улететь
               </h2>
               <p class="article-list__item-text">Если вы приняли решение переехать в другую страну, чтобы найти там
@@ -728,7 +747,7 @@
         </div>
         <!-- /.article-list__item -->
         <div class="article-card article-list__item">
-          <a href="#" class="article-list__item-img-link">
+          <a href="pages/article-1/index.html" class="article-list__item-img-link">
             <img class="article-list__item-img" src="img/article-list-item-6.jpg"
               alt="Картинка: Список Youtube каналов для тех, кто только начинает изучать разработку">
           </a>
@@ -739,7 +758,7 @@
                 <use xlink:href="img/sprite.svg#bookmark"></use>
               </svg>
             </a>
-            <a href="#" class="article-card__article-link">
+            <a href="pages/article-1/index.html" class="article-card__article-link">
               <h2 class="article-list__item-title">Список Youtube каналов для тех, кто только начинает изучать
                 разработку
               </h2>
@@ -774,7 +793,7 @@
           <span class="article-list__last-recomendation">Недавно опубликовано</span>
           <div class="article-list__last-items-wrapper">
             <div class="article-list__last-item-wrapper">
-              <a href="#" class="article-list__last-item">
+              <a href="pages/article-1/index.html" class="article-list__last-item">
                 <div class="article-list__number">1</div>
                 <img src="img/article-list__last-img-1.jpg" alt="Картинка: Работа на удаленке, как это теперь"
                   class="article-list__last-img">
@@ -789,7 +808,7 @@
             </div>
             <!-- /.article-list__last-item-wrapper -->
             <div class="article-list__last-item-wrapper">
-              <a href="#" class="article-list__last-item">
+              <a href="pages/article-1/index.html" class="article-list__last-item">
                 <div class="article-list__number">2</div>
                 <img src="img/article-list__last-img-2.jpg" alt="Картинка: Для чего нужен Node.js и с чем..."
                   class="article-list__last-img">
@@ -803,7 +822,7 @@
               <!-- /.article-list__last-item -->
             </div>
             <div class="article-list__last-item-wrapper">
-              <a href="#" class="article-list__last-item">
+              <a href="pages/article-1/index.html" class="article-list__last-item">
                 <div class="article-list__number">3</div>
                 <img src="img/article-list__last-img-3.jpg" alt="Картинка: Работа в Google: собеседования и..."
                   class="article-list__last-img">
@@ -817,7 +836,7 @@
               <!-- /.article-list__last-item -->
             </div>
             <div class="article-list__last-item-wrapper">
-              <a href="#" class="article-list__last-item">
+              <a href="pages/article-1/index.html" class="article-list__last-item">
                 <div class="article-list__number">4</div>
                 <img src="img/article-list__last-img-4.jpg" alt="Картинка: Переезд в Нью Йорк для работы по..."
                   class="article-list__last-img">
@@ -831,7 +850,7 @@
               <!-- /.article-list__last-item -->
             </div>
             <div class="article-list__last-item-wrapper">
-              <a href="#" class="article-list__last-item">
+              <a href="pages/article-1/index.html" class="article-list__last-item">
                 <div class="article-list__number">5</div>
                 <img src="img/article-list__last-img-5.jpg" alt="Картинка: Почему родители против того, чтобы...."
                   class="article-list__last-img">
@@ -845,7 +864,7 @@
               <!-- /.article-list__last-item -->
             </div>
             <div class="article-list__last-item-wrapper">
-              <a href="#" class="article-list__last-item">
+              <a href="pages/article-1/index.html" class="article-list__last-item">
                 <div class="article-list__number">6</div>
                 <img src="img/article-list__last-img-6.jpg" alt="Картинка: Прокрастинация:  побороть отклады..."
                   class="article-list__last-img">
@@ -859,7 +878,7 @@
               <!-- /.article-list__last-item -->
             </div>
             <div class="article-list__last-item-wrapper">
-              <a href="#" class="article-list__last-item">
+              <a href="pages/article-1/index.html" class="article-list__last-item">
                 <div class="article-list__number">7</div>
                 <img src="img/article-list__last-img-7.jpg" alt="Картинка: Правки от заказчика могут быть..."
                   class="article-list__last-img">
@@ -874,7 +893,7 @@
             </div>
           </div>
           <!-- /.article-list__last-wrapper -->
-          <a href="#" class="article-list__last-read">
+          <a href="pages/article-1/index.html" class="article-list__last-read">
             Read more
           </a>
           <!-- /.article-list__last-read -->
@@ -895,7 +914,7 @@
             <img class="slider-section__slide-bg" src=" img/slider-section__slide-1.jpg"
               alt="Картинка: Выбор читателей: где удобнее работать фрилансеру">
             <span class="hot">Горячее</span>
-            <a href="#" class="profile slider-section__profile">
+            <a href="pages/article-1/index.html" class="profile slider-section__profile">
               <img src="img/avatar-2.jpg" alt="User avatar" class="profile__avatar">
               <div class="profile__text">
                 <span class="profile__name">Оксана Пушкина</span>
@@ -907,21 +926,21 @@
               Выбор читателей: где удобнее работать фрилансеру
             </h2>
 
-            <a href="" class="button see-more slider-section__see-more">
+            <a href="pages/article-1/index.html" class="button see-more slider-section__see-more">
               <svg class="see-more__ico">
                 <use xlink:href="img/sprite.svg#photo"></use>
               </svg>
               <span class="see-more__label">Смотреть фото</span>
               <span class="see-more__count">26</span>
             </a>
-
           </div>
           <!-- /.swiper-slide -->
+
           <div class="swiper-slide slider-section__slide">
             <img class="slider-section__slide-bg" src=" img/slider-section__slide-2.jpg"
               alt="Картинка: Выбор читателей: где удобнее работать фрилансеру">
             <span class="hot">Горячее</span>
-            <a href="#" class="profile slider-section__profile">
+            <a href="pages/article-1/index.html" class="profile slider-section__profile">
               <img src="img/avatar-2.jpg" alt="User avatar" class="profile__avatar">
               <div class="profile__text">
                 <span class="profile__name">Оксана Пушкина</span>
@@ -933,7 +952,7 @@
               Выбор читателей: где удобнее работать фрилансеру
             </h2>
 
-            <a href="" class="button see-more slider-section__see-more">
+            <a href="pages/article-1/index.html" class="button see-more slider-section__see-more">
               <svg class="see-more__ico">
                 <use xlink:href="img/sprite.svg#photo"></use>
               </svg>
@@ -943,11 +962,12 @@
 
           </div>
           <!-- /.swiper-slide -->
+
           <div class="swiper-slide slider-section__slide">
             <img class="slider-section__slide-bg" src=" img/slider-section__slide-3.jpg"
               alt="Картинка: Выбор читателей: где удобнее работать фрилансеру">
             <span class="hot">Горячее</span>
-            <a href="#" class="profile slider-section__profile">
+            <a href="pages/article-1/index.html" class="profile slider-section__profile">
               <img src="img/avatar-2.jpg" alt="User avatar" class="profile__avatar">
               <div class="profile__text">
                 <span class="profile__name">Оксана Пушкина</span>
@@ -959,7 +979,7 @@
               Выбор читателей: где удобнее работать фрилансеру
             </h2>
 
-            <a href="" class="button see-more slider-section__see-more">
+            <a href="pages/article-1/index.html" class="button see-more slider-section__see-more">
               <svg class="see-more__ico">
                 <use xlink:href="img/sprite.svg#photo"></use>
               </svg>
@@ -969,11 +989,12 @@
 
           </div>
           <!-- /.swiper-slide -->
+
           <div class="swiper-slide slider-section__slide">
             <img class="slider-section__slide-bg" src=" img/slider-section__slide-4.jpg"
               alt="Картинка: Выбор читателей: где удобнее работать фрилансеру">
             <span class="hot">Горячее</span>
-            <a href="#" class="profile slider-section__profile">
+            <a href="pages/article-1/index.html" class="profile slider-section__profile">
               <img src="img/avatar-2.jpg" alt="User avatar" class="profile__avatar">
               <div class="profile__text">
                 <span class="profile__name">Оксана Пушкина</span>
@@ -985,7 +1006,7 @@
               Выбор читателей: где удобнее работать фрилансеру
             </h2>
 
-            <a href="" class="button see-more slider-section__see-more">
+            <a href="pages/article-1/index.html" class="button see-more slider-section__see-more">
               <svg class="see-more__ico">
                 <use xlink:href="img/sprite.svg#photo"></use>
               </svg>
@@ -995,11 +1016,12 @@
 
           </div>
           <!-- /.swiper-slide -->
+
           <div class="swiper-slide slider-section__slide">
             <img class="slider-section__slide-bg" src=" img/slider-section__slide-5.jpg"
               alt="Картинка: Выбор читателей: где удобнее работать фрилансеру">
             <span class="hot">Горячее</span>
-            <a href="#" class="profile slider-section__profile">
+            <a href="pages/article-1/index.html" class="profile slider-section__profile">
               <img src="img/avatar-2.jpg" alt="User avatar" class="profile__avatar">
               <div class="profile__text">
                 <span class="profile__name">Оксана Пушкина</span>
@@ -1011,7 +1033,7 @@
               Выбор читателей: где удобнее работать фрилансеру
             </h2>
 
-            <a href="" class="button see-more slider-section__see-more">
+            <a href="pages/article-1/index.html" class="button see-more slider-section__see-more">
               <svg class="see-more__ico">
                 <use xlink:href="img/sprite.svg#photo"></use>
               </svg>
@@ -1029,7 +1051,7 @@
       <div class="article-card slider-section__card card-2-2 slider-section__card--big">
         <div class="slider-section__card-info slider-section__card-info--big">
           <span class="tag slider-section__card-tag color-6E99AE">Карьера</span>
-          <a href="#" class="article-link slider-section__card-article-link">
+          <a href="pages/article-1/index.html" class="article-link slider-section__card-article-link">
             <h2 class="slider-section__card-title slider-section__card-title--big">Вопросы на собеседовании для джуна
             </h2>
             <p class="slider-section__card-text slider-section__card-text--big">Каверзные и не очень вопросы, которых
@@ -1037,7 +1059,7 @@
           </a>
         </div>
         <!-- /.article-card__info -->
-        <a href="#" class="button read-more slider-section__button">
+        <a href="pages/article-1/index.html" class="button read-more slider-section__button">
           <span class="read-more__label">Читать статью</span>
           <svg class="read-more__arrow">
             <use xlink:href="img/sprite.svg#arrow-right"></use>
@@ -1048,7 +1070,7 @@
       </div>
 
       <div class="article-card article-card--type-4 slider-section__card slider-section__card--small">
-        <a href="#" class="article-card__article-link">
+        <a href="pages/article-1/index.html" class="article-card__article-link">
           <h2 class="article-card__title article-card__title--type-4">Зарядка для глаз</h2>
           <p class="article-card__text article-card__text--type-4">Эти несколько упражнений помогут сохранить зрение.
             Можно делать их даже если...</p>
@@ -1057,7 +1079,7 @@
       </div>
       <!-- /.article-card -->
       <div class="article-card article-card--type-4 slider-section__card slider-section__card--small">
-        <a href="#" class="article-card__article-link">
+        <a href="pages/article-1/index.html" class="article-card__article-link">
           <h2 class="article-card__title article-card__title--type-4">Топ плагинов jQuery</h2>
           <p class="article-card__text article-card__text--type-4">Какие плагины помогут быстро создать галерею,
             выпадающие списки или окна</p>
@@ -1230,60 +1252,60 @@
       <div class="footer-menu">
         <ul class="footer-menu__list">
           <li class="footer-menu__item">
-            <a href="./index.html" class="footer-menu__link">
+            <a href="index.html" class="footer-menu__link">
               <img src="img/footer-logo.svg" alt="Universal: Logo" class="logo footer__logo">
             </a>
           </li>
           <li class="footer-menu__item">
-            <a href="#" class="footer-menu__link">Контакты</a>
+            <a href="pages/article-1/index.html" class="footer-menu__link">Контакты</a>
           </li>
           <!-- /.footer-menu__item -->
           <li class="footer-menu__item">
-            <a href="#" class="footer-menu__link">Работа у нас</a>
+            <a href="pages/article-1/index.html" class="footer-menu__link">Работа у нас</a>
           </li>
           <!-- /.footer-menu__item -->
           <li class="footer-menu__item">
-            <a href="#" class="footer-menu__link">Реклама</a>
+            <a href="pages/article-1/index.html" class="footer-menu__link">Реклама</a>
           </li>
           <!-- /.footer-menu__item -->
           <li class="footer-menu__item">
-            <a href="#" class="footer-menu__link">Партнёрство</a>
+            <a href="pages/article-1/index.html" class="footer-menu__link">Партнёрство</a>
           </li>
           <!-- /.footer-menu__item -->
         </ul>
         <!-- /.footer-menu__list -->
         <ul class="footer-social">
           <li class="footer-social__item">
-            <a href="#" class="footer-social__link footer-social__link--fb">
+            <a href="https://www.facebook.com" target="_blank" class="footer-social__link footer-social__link--fb">
               <svg class="footer-social__link-ico">
                 <use xlink:href="img/sprite.svg#fb"></use>
               </svg>
-              <a href="#" class="footer-social__link-text">Facebook</a>
             </a>
+            <a href="https://www.facebook.com" class="footer-social__link-text">Facebook</a>
           </li>
           <li class="footer-social__item">
-            <a href="#" class="footer-social__link footer-social__link--tw">
+            <a href="https://twitter.com/?lang=ru" target="_blank" class="footer-social__link footer-social__link--tw">
               <svg class="footer-social__link-ico">
                 <use xlink:href="img/sprite.svg#twitter"></use>
               </svg>
-              <a href="#" class="footer-social__link-text">Twitter</a>
             </a>
+            <a href="https://twitter.com/?lang=ru" class="footer-social__link-text">Twitter</a>
           </li>
           <li class="footer-social__item">
-            <a href="#" class="footer-social__link footer-social__link--yt">
+            <a href="https://youtube.com" target="_blank" class="footer-social__link footer-social__link--yt">
               <svg class="footer-social__link-ico">
                 <use xlink:href="img/sprite.svg#yt"></use>
               </svg>
-              <a href="#" class="footer-social__link-text">Youtube</a>
             </a>
+            <a href="https://youtube.com" class="footer-social__link-text">Youtube</a>
           </li>
           <li class="footer-social__item">
-            <a href="#" class="footer-social__link footer-social__link--inst">
+            <a href="https://instagram.com" target="_blank" class="footer-social__link footer-social__link--inst">
               <svg class="footer-social__link-ico">
                 <use xlink:href="img/sprite.svg#inst"></use>
               </svg>
-              <a href="#" class="footer-social__link-text">Instagram</a>
             </a>
+            <a href="https://instagram.com" class="footer-social__link-text">Instagram</a>
           </li>
         </ul>
       </div>
@@ -1300,6 +1322,10 @@
     <!-- /.container footer__container -->
   </footer>
   <!-- /.footer -->
+
+  <a href="#top" class="arrow-up" data-action='soft-scroll'>
+    Наверх
+  </a>
 
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.min.js"></script>

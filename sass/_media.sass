@@ -135,6 +135,11 @@
         font-size: 12px
       &-img
         width: 45px
+    &__item
+      &-title
+        max-height: 50px
+      &-text
+        max-height: 60px
 
   .slider-section
     &__card
@@ -331,6 +336,9 @@
         font-weight: 900
         font-size: 12px
         color: $dark
+
+    &__text
+      font-size: 15px
 
   .article-bar
     &__container
@@ -573,10 +581,13 @@
     &__text
       font-size: 15px
       &--type-1
-        font-size: 20px
+        font-size: 14px
+        max-width: 100%
+        -webkit-line-clamp: 5
     &__title
       &--type-1
         max-width: 100%
+        font-size: 22px
       &--type-5
         font-size: 15px
     &__info

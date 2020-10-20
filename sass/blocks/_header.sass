@@ -25,6 +25,9 @@
       order: 2
     &__tab
       display: none
+      &:checked
+        .header-main__label
+          background: #F5F5F5
       &-title
         font-weight: 900
         font-size: 12px
@@ -44,17 +47,18 @@
       text-align: left
       cursor: pointer
       position: relative
+      border-top: 1px solid #D9DADB
       // &:last-child
       //   min-height: 100%
-      &::before
-        content: ''
-        display: block
-        position: absolute
-        top: 0
-        left: 0
-        height: 1px
-        background: #D9DADB
-        width: 100%
+      // &::before
+      //   content: ''
+      //   display: block
+      //   position: absolute
+      //   top: 0
+      //   left: 0
+      //   height: 1px
+      //   background: #D9DADB
+      //   width: 100%
     &__viewport
       width: 877px
     &__recomendation

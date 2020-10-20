@@ -22,21 +22,38 @@ $(document).ready(function () {
 
   });
 
-  $('.subscribe__form').validate({
+  $('.comment-form').validate({
     rules: {
-      email: {
+      message: {
         required: true,
-        minlength: 5,
-        email: true
+        minlength: 200,
       }
     },
     messages: {
-      email: {
-        required: "*Введите адрес электронной почты!",
-        minlength: jQuery.validator.format("*Адрес почты должен содержать не менее {0} символов!"),
-        email: "*Введите корректный адрес!"
+      message: {
+        required: "*Нельзя отправить пустой комментарий!",
+        minlength: jQuery.validator.format("*Комментарий должен быть не короче {0} символов!"),
       }
     }
   },);
+
+  $("[data-action='soft-scroll']").on('click', function(e) {
+    console.log('click');
+    $('html, body').stop().animate({
+      scrollTop: $($(this).attr('href')).offset().top }, 1000);
+      e.preventDefault();
+  });
+
+  $('.comment__load-more').on('click', function() {
+    $('.comment__item--hidden').addClass('comment__item--visible');
+  });
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > $(window).height()/2) {
+      $('.arrow-up').addClass('arrow-up--visible');
+    } else {
+      $('.arrow-up').removeClass('arrow-up--visible');
+    }
+  });
 
 });

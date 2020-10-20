@@ -11,9 +11,15 @@
       background-color: $dark
       color: $interactive
 
-  .material__title, .other-articles__title
+  .material, .other-articles__card
     &:hover, &:focus
-      color: $interactive
+      .material, .other-articles
+        &__text, &__title
+          color: $interactive
+
+  .material, .other-articles
+    .card-bottom
+      pointer-events: none
 
   .card-bottom__views
     &:hover, &:focus
@@ -25,3 +31,11 @@
     &:hover, &:focus
       background-color: $dark
       color: $interactive
+
+  .add-button
+    &:hover, &:focus
+      .add-button
+        &__label
+          color: $interactive
+        &__ico
+          fill: $interactive
