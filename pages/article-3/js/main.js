@@ -26,7 +26,7 @@ $(document).ready(function () {
     rules: {
       message: {
         required: true,
-        minlength: 200,
+        minlength: 100,
       }
     },
     messages: {

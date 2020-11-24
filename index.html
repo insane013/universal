@@ -9,21 +9,21 @@
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .clamp {
+      -webkit-box-orient: vertical;
+    }
+
+    .article-card p,
+    .article-list p,
+    .article-card h2,
+    .article-list h2,
+    .header-bottom__item a {
+      -webkit-box-orient: vertical;
+    }
+  </style>
+
 </head>
-
-<style>
-  .clamp {
-    -webkit-box-orient: vertical;
-  }
-
-  .article-card p,
-  .article-list p,
-  .article-card h2,
-  .article-list h2,
-  .header-bottom__item a {
-    -webkit-box-orient: vertical;
-  }
-</style>
 
 <body>
 
@@ -292,27 +292,37 @@
         <div class="container header-bottom-container">
           <ul class="header-bottom__list">
             <li class="header-bottom__item">
-              <a href="pages/article-1/index.html" class="header-bottom__text">25 способов настроить слайдер</a>
-              <img src="img/header-bottom-item-1.jpg" alt="Картинка: 25 способов настроить слайдер"
-                class="header-bottom__img">
+              <a href="pages/article-1/index.html" class="header-bottom__link">
+                <span class="header-bottom__text">25 способов настроить слайдер</span>
+                <img src="img/header-bottom-item-1.jpg" alt="Картинка: 25 способов настроить слайдер"
+                  class="header-bottom__img">
+              </a>
             </li>
             <!-- /.header-bottm__item -->
             <li class="header-bottom__item">
-              <a href="pages/article-1/index.html" class="header-bottom__text">Главные фишки фрилансера</a>
-              <img src="img/header-bottom-item-2.jpg" alt="Картинка: Главные фишки фрилансера"
-                class="header-bottom__img">
+              <a href="pages/article-1/index.html" class="header-bottom__link">
+                <span class="header-bottom__text">Главные фишки фрилансера</span>
+                <img src="img/header-bottom-item-2.jpg" alt="Картинка: Главные фишки фрилансера"
+                  class="header-bottom__img">
+              </a>
             </li>
             <!-- /.header-bottm__item -->
             <li class="header-bottom__item">
-              <a href="pages/article-1/index.html" class="header-bottom__text">Техника управлеия временем “Помодоро”</a>
-              <img src="img/header-bottom-item-3.jpg" alt="Картинка: Техника управлеия  временем “Помодоро”"
-                class="header-bottom__img">
+              <a href="pages/article-1/index.html" class="header-bottom__link">
+                <span class="header-bottom__text">Техника управлеия временем
+                  “Помодоро”</span>
+                <img src="img/header-bottom-item-3.jpg" alt="Картинка: Техника управлеия  временем “Помодоро”"
+                  class="header-bottom__img">
+              </a>
             </li>
             <!-- /.header-bottm__item -->
             <li class="header-bottom__item">
-              <a href="pages/article-1/index.html" class="header-bottom__text">Что нужно знать о Git и&nbsp;GitHub </a>
-              <img src="img/header-bottom-item-4.jpg" alt="Картинка: Что нужно знать о Git и GitHub "
-                class="header-bottom__img">
+              <a href="pages/article-1/index.html" class="header-bottom__link">
+                <span class="header-bottom__text">Что нужно знать о Git и&nbsp;GitHub
+                </span>
+                <img src="img/header-bottom-item-4.jpg" alt="Картинка: Что нужно знать о Git и GitHub "
+                  class="header-bottom__img">
+              </a>
             </li>
             <!-- /.header-bottm__item -->
           </ul>
@@ -503,25 +513,31 @@
         <ul class="article-card__social">
           <li class="article-card__item">
             <a href="https://www.facebook.com" target="_blank" class="article-card__link article-card__link--fb">
-              <svg class="article-card__link-ico">
-                <use xlink:href="img/sprite.svg#fb"></use>
-              </svg>
+              <div class="article-card__link-ico">
+                <svg>
+                  <use xlink:href="img/sprite.svg#fb"></use>
+                </svg>
+              </div>
             </a>
             <a href="#" class="article-card__link-text">Facebook</a>
           </li>
           <li class="article-card__item">
             <a href="https://twiiter.com/?lang=ru" target="_blank" class="article-card__link article-card__link--tw">
-              <svg class="article-card__link-ico">
-                <use xlink:href="img/sprite.svg#twitter"></use>
-              </svg>
+              <div class="article-card__link-ico">
+                <svg>
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+              </div>
             </a>
             <a href="#" class="article-card__link-text">Twitter</a>
           </li>
           <li class="article-card__item">
             <a href="https://youtube.com" target="_blank" class="article-card__link article-card__link--yt">
-              <svg class="article-card__link-ico">
-                <use xlink:href="img/sprite.svg#yt"></use>
-              </svg>
+              <div class="article-card__link-ico">
+                <svg>
+                  <use xlink:href="img/sprite.svg#yt"></use>
+                </svg>
+              </div>
             </a>
             <a href="#" class="article-card__link-text">Youtube</a>
           </li>

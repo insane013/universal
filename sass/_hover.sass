@@ -7,13 +7,16 @@
       outline: none
       .search__button-ico
         fill: $interactive
-  .header-main__label
-    &:hover, &:focus
-      background-color: $interactive
-      .header-main__tab-text
-        color: #ffffff
-      .header-main__tab-title
-        color: $dark
+
+  .header-main
+    &__tabs>input:checked+label
+      background-color: #f5f5f5
+
+  .header-main
+    &__label, &__tabs>input:checked+label
+      &:hover, &:focus
+        background-color: darken(#fff, 15%)
+
   .header-bottom__item
     &:hover, &:focus
       background-color: darken($dark, 10%)
@@ -102,9 +105,5 @@
     &__link
       &:hover, &:focus
         background-color: $dark
-        .article-card__link-ico
+        .footer-social__link-ico
           fill: $interactive
-
-  .header-main
-    &__tabs>input:checked+label
-      background-color: #f5f5f5
